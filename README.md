@@ -36,3 +36,7 @@ Paths are curated filters and progress views over the same lesson bank. They are
 
 ## Limitations
 No cross-device sync. Browser storage can be deleted by the OS/browser. Offline availability depends on successful first cache population and service worker support. This app provides educational information, not medical advice. For production medical products, independent domain review is required.
+
+
+## Approved Ink & Paper design
+The interface is permanently dark (ink #101715), with muted sage controls and minimal surfaces. Lesson explanations and quiz cards alone use warm ivory (#F5F0E7) for comfortable reading. Headings use Newsreader, UI text uses Inter. No theme toggle is required. Fonts are fetched from Google Fonts when online, with system fallbacks offline.

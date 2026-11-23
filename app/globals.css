@@ -1,2 +1,45 @@
-@tailwind base;@tailwind components;@tailwind utilities;
-:root{color-scheme:light}*{box-sizing:border-box}body{background:#fffcf7;color:#302a46;font-family:Arial,Helvetica,sans-serif}button,input{touch-action:manipulation}button:focus-visible,input:focus-visible{outline:3px solid #bba5ed;outline-offset:2px}.panel{@apply bg-white rounded-3xl border border-purple-100 shadow-soft}.btn{@apply rounded-2xl px-4 py-3 font-semibold transition active:scale-[.98]}.primary{@apply btn bg-violet text-white}.soft{@apply btn bg-lav text-violet}.pill{@apply rounded-full px-3 py-1 text-xs font-semibold bg-lav text-violet}.muted{@apply text-sm text-slate-500}input[type=range]{accent-color:#7153bb}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { color-scheme:dark; --ink:#101715; --surface:#202B27; --ivory:#F5F0E7; --sage:#A4C6AD; --text:#F1EADF; }
+* {box-sizing:border-box}
+html {scroll-behavior:smooth;background:#101715}
+body {margin:0;background:#101715;color:var(--text);font-family:Inter,ui-sans-serif,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.editorial-heading {font-family:Newsreader,Georgia,serif;letter-spacing:-.025em}
+button,input,select {touch-action:manipulation}
+button {cursor:pointer}
+button:focus-visible,input:focus-visible,select:focus-visible {outline:2px solid #A4C6AD;outline-offset:3px}
+.panel {background:#202B27;border:1px solid #34413B;border-radius:16px;box-shadow:none}
+.btn {border-radius:12px;padding:12px 16px;font-weight:600;transition:background-color .15s}
+.primary {background:#A4C6AD;color:#101715}
+.primary:hover {background:#B9D6BF}
+.soft {background:#293B33;color:#E5EEE4}
+.soft:hover {background:#354A3E}
+.pill {display:inline-block;border-radius:7px;padding:4px 9px;font-size:12px;font-weight:500;background:#34463B;color:#D3E5D3}
+.muted {font-size:14px;color:#A7B5AB}
+input[type=range] {accent-color:#A4C6AD}
+select {background:#26362E!important;color:#F1EADF;border-color:#43574A!important}
+.panel button:disabled {cursor:default}
+::selection {background:#A4C6AD;color:#101715}
+/* Ink shell remains dark on every page. Only the lesson text and quiz use paper. */
+.lesson-screen {background:#101715;color:#F1EADF}
+.reading-surface,.quiz-surface {background:#F5F0E7!important;color:#252E2A!important;border-color:#E1DDD4!important}
+.reading-surface .muted,.quiz-surface .muted {color:#536259}
+.quiz-surface .quiz-choice {color:#252E2A}
+.quiz-surface .text-violet,.reading-surface .text-violet {color:#214F3B}
+.feedback-surface {background:#202B27;color:#F1EADF}
+.settings-surface {background:#17211C;color:#F1EADF}
+/* Legacy Tailwind utility colors are deliberately unified to reduce visual noise. */
+.text-violet {color:#A4C6AD!important}
+.bg-violet {background-color:#A4C6AD!important}
+.bg-emerald-100 {background-color:#405348!important}
+.text-slate-500 {color:#A7B5AB!important}
+.text-slate-400 {color:#A7B5AB!important}
+.text-amber-600,.text-amber-500 {color:#C8B38B!important}
+.bg-lav {background:#34463B!important}
+.border-emerald-100 {border-color:#34413B!important}
+.quiz-surface .bg-white {background:#FFFCF7!important}
+.quiz-surface .text-violet {color:#214F3B!important}
+.quiz-surface .bg-emerald-50 {background:#DCE9DC!important}
+@media (prefers-reduced-motion:reduce) {* {animation-duration:.01ms!important;transition-duration:.01ms!important}}
