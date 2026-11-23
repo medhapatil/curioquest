@@ -2622,5 +2622,1272 @@
     "paths": [
       "bioinformatics"
     ]
+  },
+  {
+    "id": "sponge-001",
+    "topic": "healthai",
+    "subtopic": "Clinical workflow",
+    "difficulty": "intermediate",
+    "title": "The alert that arrived too late",
+    "hook": "Can an accurate prediction still be useless?",
+    "explanation": "A deterioration alert is valuable only if it reaches a clinician while an effective response remains possible. Timing and ownership are product requirements.",
+    "quiz": {
+      "question": "Which launch metric best measures clinical usefulness?",
+      "choices": [
+        "Number of model parameters",
+        "Time from actionable alert to clinician response",
+        "Color of the dashboard"
+      ],
+      "correctIndex": 1,
+      "explanation": "A deterioration alert is valuable only if it reaches a clinician while an effective response remains possible. Timing and ownership are product requirements."
+    },
+    "deeper": "Map the decision window, escalation route, and who can act; compare time-to-action before and after deployment.",
+    "sources": [
+      "https://www.ahrq.gov/patient-safety/index.html"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-002",
+    "topic": "healthai",
+    "subtopic": "Model evaluation",
+    "difficulty": "intermediate",
+    "title": "The accuracy trap in rare disease",
+    "hook": "Why can 99% accuracy hide a failing screening model?",
+    "explanation": "If a condition affects 1% of people, predicting everyone is negative yields 99% accuracy while detecting no cases. Class prevalence matters.",
+    "quiz": {
+      "question": "Which measure directly describes the share of actual cases found?",
+      "choices": [
+        "Specificity",
+        "Overall accuracy",
+        "Sensitivity"
+      ],
+      "correctIndex": 2,
+      "explanation": "If a condition affects 1% of people, predicting everyone is negative yields 99% accuracy while detecting no cases. Class prevalence matters."
+    },
+    "deeper": "Evaluate sensitivity, specificity, precision and calibration at the intended prevalence, not accuracy alone.",
+    "sources": [
+      "https://www.fda.gov/medical-devices/software-medical-device-samd"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-003",
+    "topic": "healthai",
+    "subtopic": "Product strategy",
+    "difficulty": "intermediate",
+    "title": "Who owns the override?",
+    "hook": "Should clinicians be allowed to reject an AI recommendation?",
+    "explanation": "Clinical decision support should fit human accountability. A product should make uncertainty visible and support appropriate clinician review.",
+    "quiz": {
+      "question": "Which design supports accountable clinical use?",
+      "choices": [
+        "Show rationale and enable documented override",
+        "Hide model uncertainty",
+        "Auto-accept every suggestion"
+      ],
+      "correctIndex": 0,
+      "explanation": "Clinical decision support should fit human accountability. A product should make uncertainty visible and support appropriate clinician review."
+    },
+    "deeper": "Design the override as a learnable workflow and monitor disagreements for safety signals.",
+    "sources": [
+      "https://www.fda.gov/medical-devices/digital-health-center-excellence/clinical-decision-support-software"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-004",
+    "topic": "healthai",
+    "subtopic": "Data leakage",
+    "difficulty": "intermediate",
+    "title": "A model that knew the future",
+    "hook": "How can a test score be suspiciously perfect?",
+    "explanation": "If a training feature becomes available only after the outcome, the model has leaked future information and may fail in real use.",
+    "quiz": {
+      "question": "Which feature is most likely to leak information for an admission-time model?",
+      "choices": [
+        "Age at admission",
+        "A discharge diagnosis code",
+        "Presenting symptom at admission"
+      ],
+      "correctIndex": 1,
+      "explanation": "If a training feature becomes available only after the outcome, the model has leaked future information and may fail in real use."
+    },
+    "deeper": "Freeze features at the exact prediction timestamp and validate on later patients.",
+    "sources": [
+      "https://developers.google.com/machine-learning/crash-course/overfitting/data-leakage"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-005",
+    "topic": "healthai",
+    "subtopic": "Clinical validation",
+    "difficulty": "intermediate",
+    "title": "From AUROC to actual care",
+    "hook": "Does a high AUROC prove patients benefit?",
+    "explanation": "AUROC describes ranking across thresholds, not whether using a model improves care. Clinical benefit needs workflow and outcome evidence.",
+    "quiz": {
+      "question": "What additional evidence matters most before widespread adoption?",
+      "choices": [
+        "A larger logo",
+        "More training epochs alone",
+        "Prospective evaluation of patient-relevant outcomes"
+      ],
+      "correctIndex": 2,
+      "explanation": "AUROC describes ranking across thresholds, not whether using a model improves care. Clinical benefit needs workflow and outcome evidence."
+    },
+    "deeper": "Predefine harms, benefits, comparison care, and monitoring before a clinical pilot.",
+    "sources": [
+      "https://www.fda.gov/medical-devices/software-medical-device-samd"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-006",
+    "topic": "healthai",
+    "subtopic": "Privacy",
+    "difficulty": "intermediate",
+    "title": "The dataset with hidden identifiers",
+    "hook": "Can removing names fully anonymize records?",
+    "explanation": "Combinations of dates, geography and rare diagnoses may reidentify people. Privacy needs threat modeling beyond deleting direct identifiers.",
+    "quiz": {
+      "question": "Which step best reduces reidentification risk?",
+      "choices": [
+        "Assess indirect identifiers and limit access",
+        "Delete first names only",
+        "Publish raw encounter dates"
+      ],
+      "correctIndex": 0,
+      "explanation": "Combinations of dates, geography and rare diagnoses may reidentify people. Privacy needs threat modeling beyond deleting direct identifiers."
+    },
+    "deeper": "Consider data minimization, governance, retention and reidentification risk.",
+    "sources": [
+      "https://www.hhs.gov/hipaa/for-professionals/privacy/special-topics/de-identification/index.html"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-007",
+    "topic": "healthai",
+    "subtopic": "Bias",
+    "difficulty": "intermediate",
+    "title": "One threshold for everyone?",
+    "hook": "Can a model work differently across patient groups?",
+    "explanation": "Overall performance can conceal unequal error rates across populations, especially when datasets underrepresent certain groups.",
+    "quiz": {
+      "question": "What should the PM examine?",
+      "choices": [
+        "Only average training loss",
+        "Subgroup sensitivity and false-positive rates",
+        "Only model file size"
+      ],
+      "correctIndex": 1,
+      "explanation": "Overall performance can conceal unequal error rates across populations, especially when datasets underrepresent certain groups."
+    },
+    "deeper": "Audit sample size, calibration, and clinical consequences for each meaningful subgroup.",
+    "sources": [
+      "https://www.nist.gov/itl/ai-risk-management-framework"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-008",
+    "topic": "healthai",
+    "subtopic": "Interoperability",
+    "difficulty": "intermediate",
+    "title": "The record that could not travel",
+    "hook": "Why is exchanging clinical data so difficult?",
+    "explanation": "Health systems use different vocabularies, workflows and interfaces. FHIR provides standards for representing and exchanging health information.",
+    "quiz": {
+      "question": "What is FHIR primarily used for?",
+      "choices": [
+        "Drug molecule folding",
+        "Medical image compression",
+        "Health data interoperability"
+      ],
+      "correctIndex": 2,
+      "explanation": "Health systems use different vocabularies, workflows and interfaces. FHIR provides standards for representing and exchanging health information."
+    },
+    "deeper": "An API standard helps transport information, but semantic mapping and consent still matter.",
+    "sources": [
+      "https://www.healthit.gov/topic/standards-technology/standards/fhir"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-009",
+    "topic": "healthai",
+    "subtopic": "Product discovery",
+    "difficulty": "intermediate",
+    "title": "Interview the nurse first",
+    "hook": "Who should a hospital AI PM interview before prototyping?",
+    "explanation": "A clinician's actual task, interruptions and handoffs determine whether a tool is usable; executives alone cannot describe bedside reality.",
+    "quiz": {
+      "question": "Which discovery method is most informative?",
+      "choices": [
+        "Observe and interview frontline users",
+        "Ask only the procurement team",
+        "Copy a competitor screen"
+      ],
+      "correctIndex": 0,
+      "explanation": "A clinician's actual task, interruptions and handoffs determine whether a tool is usable; executives alone cannot describe bedside reality."
+    },
+    "deeper": "Map jobs-to-be-done and exceptions before writing feature requirements.",
+    "sources": [
+      "https://www.ahrq.gov/patient-safety/index.html"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-010",
+    "topic": "healthai",
+    "subtopic": "Monitoring",
+    "difficulty": "intermediate",
+    "title": "Drift after deployment",
+    "hook": "What if the hospital changes its lab assay?",
+    "explanation": "Changes in inputs, care pathways or population can undermine a model even when its code is unchanged.",
+    "quiz": {
+      "question": "What monitoring is most useful?",
+      "choices": [
+        "Count only daily logins",
+        "Track input shifts and outcome performance",
+        "Measure server uptime only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Changes in inputs, care pathways or population can undermine a model even when its code is unchanged."
+    },
+    "deeper": "Create drift triggers, incident response and a safe rollback path.",
+    "sources": [
+      "https://www.nist.gov/itl/ai-risk-management-framework"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-011",
+    "topic": "healthai",
+    "subtopic": "Safety",
+    "difficulty": "intermediate",
+    "title": "When not to launch",
+    "hook": "Would you launch a promising model with no escalation plan?",
+    "explanation": "A model that flags emergencies can cause harm if no person is responsible for reviewing and acting on the output.",
+    "quiz": {
+      "question": "Which is the safest release decision?",
+      "choices": [
+        "Launch to everyone immediately",
+        "Remove the audit log",
+        "Pilot only after assigning escalation ownership"
+      ],
+      "correctIndex": 2,
+      "explanation": "A model that flags emergencies can cause harm if no person is responsible for reviewing and acting on the output."
+    },
+    "deeper": "Use staged rollout with predefined stop conditions and safety review.",
+    "sources": [
+      "https://www.ahrq.gov/patient-safety/index.html"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-012",
+    "topic": "healthai",
+    "subtopic": "Metrics",
+    "difficulty": "intermediate",
+    "title": "The hidden cost of false alarms",
+    "hook": "Can a sensitive model overwhelm staff?",
+    "explanation": "More alerts can catch more events but also create alarm fatigue. The appropriate threshold depends on the costs of misses and interruptions.",
+    "quiz": {
+      "question": "Which measure captures alert burden?",
+      "choices": [
+        "False alerts per clinician shift",
+        "Total code commits",
+        "Number of training labels"
+      ],
+      "correctIndex": 0,
+      "explanation": "More alerts can catch more events but also create alarm fatigue. The appropriate threshold depends on the costs of misses and interruptions."
+    },
+    "deeper": "Use decision curves or cost-sensitive analysis alongside clinician workflow testing.",
+    "sources": [
+      "https://www.ahrq.gov/patient-safety/index.html"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-013",
+    "topic": "healthai",
+    "subtopic": "Consent",
+    "difficulty": "intermediate",
+    "title": "Who gets to reuse patient data?",
+    "hook": "Does technical access imply permission to use clinical records?",
+    "explanation": "Access controls and lawful use are different questions. Product teams must understand purpose, permissions and applicable privacy rules.",
+    "quiz": {
+      "question": "What should a PM establish before secondary data use?",
+      "choices": [
+        "Only dataset row count",
+        "Permitted purpose and governance",
+        "Only model architecture"
+      ],
+      "correctIndex": 1,
+      "explanation": "Access controls and lawful use are different questions. Product teams must understand purpose, permissions and applicable privacy rules."
+    },
+    "deeper": "Rules vary by jurisdiction, institution and data source; consult qualified privacy teams.",
+    "sources": [
+      "https://www.hhs.gov/hipaa/for-professionals/privacy/index.html"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-014",
+    "topic": "healthai",
+    "subtopic": "Calibration",
+    "difficulty": "intermediate",
+    "title": "A 20% risk should mean something",
+    "hook": "What does it mean when a risk score is calibrated?",
+    "explanation": "Among patients given roughly 20% predicted risk, approximately 20% should experience the outcome over the defined period.",
+    "quiz": {
+      "question": "Which test checks calibration?",
+      "choices": [
+        "Count model layers",
+        "Measure only inference speed",
+        "Compare predicted risks with observed event rates"
+      ],
+      "correctIndex": 2,
+      "explanation": "Among patients given roughly 20% predicted risk, approximately 20% should experience the outcome over the defined period."
+    },
+    "deeper": "A model can discriminate well yet systematically overestimate risk.",
+    "sources": [
+      "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-015",
+    "topic": "women",
+    "subtopic": "Reproductive health",
+    "difficulty": "beginner",
+    "title": "Cycle length is not a clock",
+    "hook": "Why isn't every menstrual cycle 28 days?",
+    "explanation": "Cycle length varies between individuals and across life stages. A single textbook number cannot describe every person's pattern.",
+    "quiz": {
+      "question": "Which statement is most accurate?",
+      "choices": [
+        "Cycle lengths can vary normally",
+        "All cycles are exactly 28 days",
+        "Ovulation always occurs on day 14"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cycle length varies between individuals and across life stages. A single textbook number cannot describe every person's pattern."
+    },
+    "deeper": "Persistent major changes or concerning symptoms deserve individualized medical evaluation.",
+    "sources": [
+      "https://www.acog.org/womens-health"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "sponge-016",
+    "topic": "women",
+    "subtopic": "Endometriosis",
+    "difficulty": "beginner",
+    "title": "Pain that imaging may miss",
+    "hook": "Can a normal scan rule out endometriosis?",
+    "explanation": "Endometriosis symptoms and lesion visibility vary. Imaging may detect some forms but cannot exclude all disease.",
+    "quiz": {
+      "question": "What is the best conclusion from a normal scan?",
+      "choices": [
+        "Endometriosis is impossible",
+        "Endometriosis may still require clinical assessment",
+        "Pain must be psychological"
+      ],
+      "correctIndex": 1,
+      "explanation": "Endometriosis symptoms and lesion visibility vary. Imaging may detect some forms but cannot exclude all disease."
+    },
+    "deeper": "Diagnosis draws on symptoms, examination and appropriate imaging or other evaluation.",
+    "sources": [
+      "https://www.who.int/news-room/fact-sheets/detail/endometriosis"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "sponge-017",
+    "topic": "women",
+    "subtopic": "PCOS",
+    "difficulty": "beginner",
+    "title": "More than ovarian cysts",
+    "hook": "Does PCOS always mean cysts on an ultrasound?",
+    "explanation": "PCOS is a syndrome assessed using a combination of features and exclusion of other causes. Ultrasound appearance alone is not sufficient.",
+    "quiz": {
+      "question": "Which approach is most appropriate?",
+      "choices": [
+        "Diagnose from one image alone",
+        "Assume all cases are identical",
+        "Evaluate the full clinical criteria"
+      ],
+      "correctIndex": 2,
+      "explanation": "PCOS is a syndrome assessed using a combination of features and exclusion of other causes. Ultrasound appearance alone is not sufficient."
+    },
+    "deeper": "Different diagnostic criteria apply in adolescents and adults; individual assessment matters.",
+    "sources": [
+      "https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "sponge-018",
+    "topic": "women",
+    "subtopic": "Research methods",
+    "difficulty": "beginner",
+    "title": "Who was missing from the trial?",
+    "hook": "Why does participant diversity matter in women's health research?",
+    "explanation": "If a study excludes relevant populations, its findings may not generalize to those patients or their treatment contexts.",
+    "quiz": {
+      "question": "Which change improves applicability?",
+      "choices": [
+        "Recruit representative participants",
+        "Report only the average age",
+        "Exclude complex patients by default"
+      ],
+      "correctIndex": 0,
+      "explanation": "If a study excludes relevant populations, its findings may not generalize to those patients or their treatment contexts."
+    },
+    "deeper": "Analyze meaningful subgroups while avoiding underpowered claims.",
+    "sources": [
+      "https://orwh.od.nih.gov/"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "sponge-019",
+    "topic": "women",
+    "subtopic": "Fertility",
+    "difficulty": "beginner",
+    "title": "A probability, not a promise",
+    "hook": "Can one biomarker precisely predict an individual's fertility?",
+    "explanation": "Fertility depends on multiple factors. A single marker can inform assessment without reliably predicting whether a specific person will conceive.",
+    "quiz": {
+      "question": "What is the soundest interpretation?",
+      "choices": [
+        "Treat a marker as a guarantee",
+        "Use markers as one part of clinical context",
+        "Ignore age and medical history"
+      ],
+      "correctIndex": 1,
+      "explanation": "Fertility depends on multiple factors. A single marker can inform assessment without reliably predicting whether a specific person will conceive."
+    },
+    "deeper": "Communicate uncertainty and distinguish ovarian reserve from actual pregnancy probability.",
+    "sources": [
+      "https://www.acog.org/womens-health"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "sponge-020",
+    "topic": "women",
+    "subtopic": "Psychology",
+    "difficulty": "beginner",
+    "title": "Stress and the body",
+    "hook": "Can stress change how pain is experienced?",
+    "explanation": "Pain involves sensory and emotional processing. Stress can influence pain experience without making the pain imaginary.",
+    "quiz": {
+      "question": "Which response is most appropriate?",
+      "choices": [
+        "Dismiss symptoms as invented",
+        "Assume one cause without evaluation",
+        "Assess physical and psychosocial factors together"
+      ],
+      "correctIndex": 2,
+      "explanation": "Pain involves sensory and emotional processing. Stress can influence pain experience without making the pain imaginary."
+    },
+    "deeper": "A biopsychosocial framework complements, rather than replaces, investigation of disease.",
+    "sources": [
+      "https://www.ninds.nih.gov/health-information/disorders/pain"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "sponge-021",
+    "topic": "women",
+    "subtopic": "Healthcare AI",
+    "difficulty": "beginner",
+    "title": "The period app privacy question",
+    "hook": "Why are intimate symptom logs especially sensitive?",
+    "explanation": "Reproductive and mental health data can expose highly personal information. Collection should be limited to what a feature truly needs.",
+    "quiz": {
+      "question": "Which product choice best protects users?",
+      "choices": [
+        "Minimize collection and explain data uses",
+        "Collect everything by default",
+        "Make deletion impossible"
+      ],
+      "correctIndex": 0,
+      "explanation": "Reproductive and mental health data can expose highly personal information. Collection should be limited to what a feature truly needs."
+    },
+    "deeper": "Provide clear consent, retention and deletion controls and review applicable laws.",
+    "sources": [
+      "https://www.ftc.gov/business-guidance/privacy-security"
+    ],
+    "paths": [
+      "womens-health",
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-022",
+    "topic": "women",
+    "subtopic": "Research gaps",
+    "difficulty": "beginner",
+    "title": "A missing endpoint",
+    "hook": "What if a trial measures lab results but not daily functioning?",
+    "explanation": "A surrogate endpoint may not capture whether patients actually feel or function better.",
+    "quiz": {
+      "question": "What would strengthen a women's health trial?",
+      "choices": [
+        "Use only marketing surveys",
+        "Include patient-reported outcomes",
+        "Exclude symptom burden"
+      ],
+      "correctIndex": 1,
+      "explanation": "A surrogate endpoint may not capture whether patients actually feel or function better."
+    },
+    "deeper": "Define outcomes important to patients before collecting data.",
+    "sources": [
+      "https://www.fda.gov/patients/learn-about-drug-and-device-approvals"
+    ],
+    "paths": [
+      "womens-health",
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-023",
+    "topic": "women",
+    "subtopic": "Mental health",
+    "difficulty": "beginner",
+    "title": "Screening is not diagnosis",
+    "hook": "Why shouldn't a mental health chatbot label users with a disorder?",
+    "explanation": "Screening tools flag possible concerns; diagnosis requires appropriate clinical assessment and context.",
+    "quiz": {
+      "question": "What is the safest product behavior?",
+      "choices": [
+        "Declare a diagnosis from one response",
+        "Hide uncertainty",
+        "Explain limits and route concerns to qualified care"
+      ],
+      "correctIndex": 2,
+      "explanation": "Screening tools flag possible concerns; diagnosis requires appropriate clinical assessment and context."
+    },
+    "deeper": "Validate screening performance and create clear escalation guidance.",
+    "sources": [
+      "https://www.nimh.nih.gov/health/topics"
+    ],
+    "paths": [
+      "womens-health",
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-024",
+    "topic": "women",
+    "subtopic": "Hormones",
+    "difficulty": "beginner",
+    "title": "Feedback loops in endocrinology",
+    "hook": "How does the body regulate hormone levels?",
+    "explanation": "Many endocrine systems use feedback loops: hormone levels influence signals that increase or decrease further production.",
+    "quiz": {
+      "question": "Which mechanism stabilizes many hormone systems?",
+      "choices": [
+        "Negative feedback",
+        "Random secretion only",
+        "No signaling between organs"
+      ],
+      "correctIndex": 0,
+      "explanation": "Many endocrine systems use feedback loops: hormone levels influence signals that increase or decrease further production."
+    },
+    "deeper": "Feedback systems are dynamic; timing and context matter when interpreting measurements.",
+    "sources": [
+      "https://www.niddk.nih.gov/health-information/endocrine-diseases"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "sponge-025",
+    "topic": "ai",
+    "subtopic": "Retrieval",
+    "difficulty": "beginner",
+    "title": "When a chatbot checks its notes",
+    "hook": "Why connect an LLM to a document search tool?",
+    "explanation": "Retrieval-augmented generation supplies relevant external context at response time, which can improve grounding but does not guarantee correctness.",
+    "quiz": {
+      "question": "What is the core role of retrieval?",
+      "choices": [
+        "Replace all model training",
+        "Provide relevant source context",
+        "Guarantee zero hallucinations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Retrieval-augmented generation supplies relevant external context at response time, which can improve grounding but does not guarantee correctness."
+    },
+    "deeper": "Evaluate citation faithfulness and retrieval coverage separately.",
+    "sources": [
+      "https://developers.google.com/machine-learning"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-026",
+    "topic": "ai",
+    "subtopic": "Evaluation",
+    "difficulty": "beginner",
+    "title": "A benchmark is not a product",
+    "hook": "Can a high benchmark score predict real user satisfaction?",
+    "explanation": "Benchmarks test specific tasks under specific conditions; production users encounter ambiguity, latency and failure modes not captured in one score.",
+    "quiz": {
+      "question": "Which evaluation is most informative?",
+      "choices": [
+        "Benchmark rank alone",
+        "Parameter count alone",
+        "Task-specific testing with representative users"
+      ],
+      "correctIndex": 2,
+      "explanation": "Benchmarks test specific tasks under specific conditions; production users encounter ambiguity, latency and failure modes not captured in one score."
+    },
+    "deeper": "Define success around user outcomes, reliability, cost and safety.",
+    "sources": [
+      "https://www.nist.gov/itl/ai-risk-management-framework"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-027",
+    "topic": "ai",
+    "subtopic": "Classification",
+    "difficulty": "beginner",
+    "title": "Precision versus recall",
+    "hook": "Why can two good classifiers make different mistakes?",
+    "explanation": "Precision asks how many predicted positives are true; recall asks how many actual positives were detected.",
+    "quiz": {
+      "question": "Which metric focuses on missed positives?",
+      "choices": [
+        "Recall",
+        "Precision",
+        "Training duration"
+      ],
+      "correctIndex": 0,
+      "explanation": "Precision asks how many predicted positives are true; recall asks how many actual positives were detected."
+    },
+    "deeper": "Threshold selection changes the tradeoff and should reflect downstream harms.",
+    "sources": [
+      "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-028",
+    "topic": "ai",
+    "subtopic": "Prompt injection",
+    "difficulty": "beginner",
+    "title": "A document that gives orders",
+    "hook": "Should an AI assistant obey instructions inside a retrieved document?",
+    "explanation": "Retrieved material may contain malicious instructions. It should be treated as untrusted task data, not as higher-priority instructions.",
+    "quiz": {
+      "question": "What is the safer design?",
+      "choices": [
+        "Grant documents admin rights",
+        "Separate source content from system instructions",
+        "Disable all logging"
+      ],
+      "correctIndex": 1,
+      "explanation": "Retrieved material may contain malicious instructions. It should be treated as untrusted task data, not as higher-priority instructions."
+    },
+    "deeper": "Test adversarial documents and enforce tool permissions outside the model.",
+    "sources": [
+      "https://owasp.org/www-project-top-10-for-large-language-model-applications/"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-029",
+    "topic": "ai",
+    "subtopic": "Human oversight",
+    "difficulty": "beginner",
+    "title": "Automation bias",
+    "hook": "Why might a confident-looking suggestion be dangerous?",
+    "explanation": "People may over-rely on automated recommendations even when independent evidence conflicts.",
+    "quiz": {
+      "question": "What interface design helps?",
+      "choices": [
+        "Hide supporting evidence",
+        "Force acceptance",
+        "Show uncertainty and support independent checks"
+      ],
+      "correctIndex": 2,
+      "explanation": "People may over-rely on automated recommendations even when independent evidence conflicts."
+    },
+    "deeper": "Study whether users detect and recover from deliberately seeded errors.",
+    "sources": [
+      "https://www.nist.gov/itl/ai-risk-management-framework"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-030",
+    "topic": "ai",
+    "subtopic": "Data labeling",
+    "difficulty": "beginner",
+    "title": "Disagreement can be informative",
+    "hook": "What if two expert annotators disagree?",
+    "explanation": "Disagreement may reveal ambiguity in the task, not simply careless labeling. Clear definitions and adjudication can improve datasets.",
+    "quiz": {
+      "question": "What should the team do first?",
+      "choices": [
+        "Review label criteria and disagreement patterns",
+        "Delete every disputed example",
+        "Assume the first label is correct"
+      ],
+      "correctIndex": 0,
+      "explanation": "Disagreement may reveal ambiguity in the task, not simply careless labeling. Clear definitions and adjudication can improve datasets."
+    },
+    "deeper": "Measure agreement and document cases where multiple interpretations are defensible.",
+    "sources": [
+      "https://developers.google.com/machine-learning"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-031",
+    "topic": "philosophy",
+    "subtopic": "Ethics",
+    "difficulty": "beginner",
+    "title": "The trolley problem's hidden assumption",
+    "hook": "Why do thought experiments simplify reality?",
+    "explanation": "Thought experiments isolate a moral tension by fixing assumptions, but real decisions have uncertainty and institutional context.",
+    "quiz": {
+      "question": "What is the best use of a thought experiment?",
+      "choices": [
+        "Prove one universal policy",
+        "Clarify competing principles",
+        "Avoid discussing consequences"
+      ],
+      "correctIndex": 1,
+      "explanation": "Thought experiments isolate a moral tension by fixing assumptions, but real decisions have uncertainty and institutional context."
+    },
+    "deeper": "Compare duties, outcomes and rights without mistaking the hypothetical for evidence.",
+    "sources": [
+      "https://plato.stanford.edu/entries/doing-ethics/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-032",
+    "topic": "philosophy",
+    "subtopic": "Epistemology",
+    "difficulty": "beginner",
+    "title": "Belief versus evidence",
+    "hook": "What makes a belief justified?",
+    "explanation": "Epistemology studies knowledge, justification and evidence. Confidence alone does not establish that a claim is true.",
+    "quiz": {
+      "question": "Which question is epistemological?",
+      "choices": [
+        "Which paint dries fastest?",
+        "How tall is this shelf?",
+        "What evidence supports this belief?"
+      ],
+      "correctIndex": 2,
+      "explanation": "Epistemology studies knowledge, justification and evidence. Confidence alone does not establish that a claim is true."
+    },
+    "deeper": "Consider the reliability of methods, not just the strength of conviction.",
+    "sources": [
+      "https://plato.stanford.edu/entries/epistemology/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-033",
+    "topic": "philosophy",
+    "subtopic": "Ethics",
+    "difficulty": "beginner",
+    "title": "Consequences versus duties",
+    "hook": "Can two ethical theories disagree about the same act?",
+    "explanation": "Consequentialist approaches emphasize outcomes; deontological approaches emphasize duties and constraints.",
+    "quiz": {
+      "question": "Which view primarily judges outcomes?",
+      "choices": [
+        "Consequentialism",
+        "Deontology",
+        "Skepticism"
+      ],
+      "correctIndex": 0,
+      "explanation": "Consequentialist approaches emphasize outcomes; deontological approaches emphasize duties and constraints."
+    },
+    "deeper": "Real ethical deliberation can combine multiple frameworks and acknowledge tradeoffs.",
+    "sources": [
+      "https://plato.stanford.edu/entries/consequentialism/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-034",
+    "topic": "philosophy",
+    "subtopic": "Reasoning",
+    "difficulty": "beginner",
+    "title": "The charitable interpretation",
+    "hook": "Why restate an opponent's argument fairly?",
+    "explanation": "The principle of charity encourages interpreting arguments in their strongest plausible form before criticizing them.",
+    "quiz": {
+      "question": "Which practice reflects charitable interpretation?",
+      "choices": [
+        "Attack a weaker paraphrase",
+        "Check the strongest plausible meaning",
+        "Ignore context"
+      ],
+      "correctIndex": 1,
+      "explanation": "The principle of charity encourages interpreting arguments in their strongest plausible form before criticizing them."
+    },
+    "deeper": "It improves dialogue but does not require agreeing with the argument.",
+    "sources": [
+      "https://plato.stanford.edu/entries/logic-informal/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-035",
+    "topic": "history",
+    "subtopic": "Civics",
+    "difficulty": "beginner",
+    "title": "A bill is not yet a law",
+    "hook": "Does a bill passing one US chamber become law?",
+    "explanation": "Under the usual federal legislative process, both chambers must pass the same text and it must be presented to the president, subject to constitutional exceptions.",
+    "quiz": {
+      "question": "What normally follows passage by only the House?",
+      "choices": [
+        "Automatic enactment",
+        "Immediate Supreme Court review",
+        "Senate consideration"
+      ],
+      "correctIndex": 2,
+      "explanation": "Under the usual federal legislative process, both chambers must pass the same text and it must be presented to the president, subject to constitutional exceptions."
+    },
+    "deeper": "Conference or amendment steps may be needed when chambers pass different texts.",
+    "sources": [
+      "https://www.congress.gov/legislative-process"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-036",
+    "topic": "history",
+    "subtopic": "Political systems",
+    "difficulty": "beginner",
+    "title": "Coalitions in parliamentary government",
+    "hook": "Why do some governments need several parties?",
+    "explanation": "In parliamentary systems, parties may form coalitions to secure legislative confidence when no party controls a majority.",
+    "quiz": {
+      "question": "What is a coalition government's basic purpose?",
+      "choices": [
+        "Assemble enough parliamentary support",
+        "Replace elections permanently",
+        "Eliminate opposition parties"
+      ],
+      "correctIndex": 0,
+      "explanation": "In parliamentary systems, parties may form coalitions to secure legislative confidence when no party controls a majority."
+    },
+    "deeper": "Coalition agreements negotiate policy priorities and cabinet roles.",
+    "sources": [
+      "https://www.parliament.uk/about/how/role/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-037",
+    "topic": "history",
+    "subtopic": "Primary sources",
+    "difficulty": "beginner",
+    "title": "A diary is not the whole story",
+    "hook": "Why do historians compare independent sources?",
+    "explanation": "A firsthand account gives a perspective shaped by what its author knew and wanted to record. Corroboration helps evaluate claims.",
+    "quiz": {
+      "question": "Which method strengthens historical interpretation?",
+      "choices": [
+        "Trust one diary unconditionally",
+        "Compare multiple contextualized sources",
+        "Ignore the author's position"
+      ],
+      "correctIndex": 1,
+      "explanation": "A firsthand account gives a perspective shaped by what its author knew and wanted to record. Corroboration helps evaluate claims."
+    },
+    "deeper": "Ask who produced each source, for whom, and with what incentives.",
+    "sources": [
+      "https://www.loc.gov/classroom-materials/primary-source-analysis-tool/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-038",
+    "topic": "history",
+    "subtopic": "Institutions",
+    "difficulty": "beginner",
+    "title": "What does judicial review do?",
+    "hook": "How can courts constrain government action?",
+    "explanation": "Judicial review permits courts in some systems to assess whether laws or executive actions comply with higher law or constitutions.",
+    "quiz": {
+      "question": "What is the central function of judicial review?",
+      "choices": [
+        "Set all tax rates",
+        "Appoint every legislator",
+        "Assess legal or constitutional validity"
+      ],
+      "correctIndex": 2,
+      "explanation": "Judicial review permits courts in some systems to assess whether laws or executive actions comply with higher law or constitutions."
+    },
+    "deeper": "Its scope differs across countries and constitutional arrangements.",
+    "sources": [
+      "https://www.uscourts.gov/about-federal-courts/educational-resources"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-039",
+    "topic": "culture",
+    "subtopic": "Fashion",
+    "difficulty": "beginner",
+    "title": "Why bias cut drapes differently",
+    "hook": "How can fabric direction change a garment's movement?",
+    "explanation": "Cutting woven fabric on the bias uses diagonal orientation, often allowing more give and fluid drape than cutting along the grain.",
+    "quiz": {
+      "question": "Which cut typically increases diagonal give?",
+      "choices": [
+        "Bias cut",
+        "Straight grain cut",
+        "Cross grain cut only"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cutting woven fabric on the bias uses diagonal orientation, often allowing more give and fluid drape than cutting along the grain."
+    },
+    "deeper": "Behavior depends on weave, fiber and garment construction, not the cut alone.",
+    "sources": [
+      "https://www.vam.ac.uk/articles/fashion"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-040",
+    "topic": "culture",
+    "subtopic": "Art history",
+    "difficulty": "beginner",
+    "title": "The museum label is an argument",
+    "hook": "Can a label change how we see a painting?",
+    "explanation": "Curatorial framing selects context and interpretations; a label can foreground technique, provenance or politics.",
+    "quiz": {
+      "question": "What is a useful museum habit?",
+      "choices": [
+        "Treat the label as the only interpretation",
+        "Compare the work with the label's framing",
+        "Ignore the object's materials"
+      ],
+      "correctIndex": 1,
+      "explanation": "Curatorial framing selects context and interpretations; a label can foreground technique, provenance or politics."
+    },
+    "deeper": "Ask what information is included, omitted and uncertain.",
+    "sources": [
+      "https://www.metmuseum.org/toah/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-041",
+    "topic": "culture",
+    "subtopic": "Design",
+    "difficulty": "beginner",
+    "title": "The invisible hierarchy",
+    "hook": "Why do some app screens feel easier to scan?",
+    "explanation": "Visual hierarchy uses contrast, size, spacing and grouping to indicate what deserves attention first.",
+    "quiz": {
+      "question": "Which change most directly improves hierarchy?",
+      "choices": [
+        "Use equal emphasis everywhere",
+        "Remove all spacing",
+        "Make primary actions visually distinct"
+      ],
+      "correctIndex": 2,
+      "explanation": "Visual hierarchy uses contrast, size, spacing and grouping to indicate what deserves attention first."
+    },
+    "deeper": "Test with actual users rather than assuming aesthetic preference equals usability.",
+    "sources": [
+      "https://www.nngroup.com/articles/visual-hierarchy-ux-definition/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-042",
+    "topic": "culture",
+    "subtopic": "Cultural history",
+    "difficulty": "beginner",
+    "title": "Who decides what is authentic?",
+    "hook": "Can a tradition change while remaining meaningful?",
+    "explanation": "Cultural practices evolve through migration, technology and community interpretation. Authenticity claims may reflect power and identity.",
+    "quiz": {
+      "question": "Which approach is most nuanced?",
+      "choices": [
+        "Study community perspectives and historical change",
+        "Assume traditions never change",
+        "Treat one person's view as universal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cultural practices evolve through migration, technology and community interpretation. Authenticity claims may reflect power and identity."
+    },
+    "deeper": "Avoid flattening diverse communities into one timeless style.",
+    "sources": [
+      "https://ich.unesco.org/en/what-is-intangible-heritage-00003"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-043",
+    "topic": "math",
+    "subtopic": "Probability",
+    "difficulty": "beginner",
+    "title": "The base-rate surprise",
+    "hook": "Why can a positive test still be wrong?",
+    "explanation": "Even a highly sensitive test can have low positive predictive value when the condition is rare and false positives accumulate.",
+    "quiz": {
+      "question": "What information is essential to interpret a positive result?",
+      "choices": [
+        "Only test brand",
+        "Condition prevalence",
+        "Only sample size"
+      ],
+      "correctIndex": 1,
+      "explanation": "Even a highly sensitive test can have low positive predictive value when the condition is rare and false positives accumulate."
+    },
+    "deeper": "Use Bayes' theorem to combine prior probability with sensitivity and specificity.",
+    "sources": [
+      "https://www.ncbi.nlm.nih.gov/books/NBK557491/"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-044",
+    "topic": "math",
+    "subtopic": "Decision theory",
+    "difficulty": "beginner",
+    "title": "Expected value is not a guarantee",
+    "hook": "Would you take a risky bet with positive expected value?",
+    "explanation": "Expected value averages outcomes weighted by probabilities. It does not describe how painful a rare loss might be.",
+    "quiz": {
+      "question": "What else matters for a real decision?",
+      "choices": [
+        "Only the largest possible payoff",
+        "Only the most common outcome",
+        "Risk tolerance and downside"
+      ],
+      "correctIndex": 2,
+      "explanation": "Expected value averages outcomes weighted by probabilities. It does not describe how painful a rare loss might be."
+    },
+    "deeper": "Expected utility incorporates preferences rather than only monetary averages.",
+    "sources": [
+      "https://plato.stanford.edu/entries/decision-theory/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-045",
+    "topic": "math",
+    "subtopic": "Statistics",
+    "difficulty": "beginner",
+    "title": "Correlation after a policy change",
+    "hook": "Did a new policy cause the improvement?",
+    "explanation": "A before-and-after difference may reflect seasonality, selection or other changes, not the policy itself.",
+    "quiz": {
+      "question": "Which design improves causal inference?",
+      "choices": [
+        "A credible comparison group",
+        "A prettier chart",
+        "A larger title"
+      ],
+      "correctIndex": 0,
+      "explanation": "A before-and-after difference may reflect seasonality, selection or other changes, not the policy itself."
+    },
+    "deeper": "Difference-in-differences requires assumptions about comparable trends.",
+    "sources": [
+      "https://www.ncbi.nlm.nih.gov/books/NBK470395/"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "sponge-046",
+    "topic": "math",
+    "subtopic": "Optimization",
+    "difficulty": "beginner",
+    "title": "The bottleneck problem",
+    "hook": "Why does speeding up one task barely help a workflow?",
+    "explanation": "A process is often constrained by its slowest capacity-limiting step. Improving a non-bottleneck may not raise throughput.",
+    "quiz": {
+      "question": "What should be investigated first?",
+      "choices": [
+        "The most colorful dashboard",
+        "The capacity-constraining step",
+        "The least expensive task"
+      ],
+      "correctIndex": 1,
+      "explanation": "A process is often constrained by its slowest capacity-limiting step. Improving a non-bottleneck may not raise throughput."
+    },
+    "deeper": "Map queues and variability; bottlenecks can shift after improvements.",
+    "sources": [
+      "https://ocw.mit.edu/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-047",
+    "topic": "math",
+    "subtopic": "Economics",
+    "difficulty": "beginner",
+    "title": "Opportunity cost is invisible",
+    "hook": "What does a free afternoon actually cost?",
+    "explanation": "Opportunity cost is the value of the best alternative you give up when choosing an action.",
+    "quiz": {
+      "question": "Which example is an opportunity cost?",
+      "choices": [
+        "A sunk payment you cannot recover",
+        "An unrelated future expense",
+        "The next-best use of your time"
+      ],
+      "correctIndex": 2,
+      "explanation": "Opportunity cost is the value of the best alternative you give up when choosing an action."
+    },
+    "deeper": "Compare alternatives at the margin, not just visible prices.",
+    "sources": [
+      "https://www.stlouisfed.org/education"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-048",
+    "topic": "math",
+    "subtopic": "Game theory",
+    "difficulty": "beginner",
+    "title": "A prisoner's dilemma in teamwork",
+    "hook": "Why can individually rational choices hurt everyone?",
+    "explanation": "In a prisoner's dilemma, each player has an incentive to defect even though mutual cooperation would produce a better joint outcome.",
+    "quiz": {
+      "question": "What is the defining tension?",
+      "choices": [
+        "Individual incentives versus collective welfare",
+        "Everyone has identical preferences",
+        "No one can choose strategically"
+      ],
+      "correctIndex": 0,
+      "explanation": "In a prisoner's dilemma, each player has an incentive to defect even though mutual cooperation would produce a better joint outcome."
+    },
+    "deeper": "Repeated interaction and credible commitments may change incentives.",
+    "sources": [
+      "https://plato.stanford.edu/entries/prisoner-dilemma/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-049",
+    "topic": "nature",
+    "subtopic": "Climate",
+    "difficulty": "beginner",
+    "title": "Weather is not climate",
+    "hook": "Can one cold day disprove global warming?",
+    "explanation": "Weather describes short-term conditions; climate concerns statistical patterns over long periods.",
+    "quiz": {
+      "question": "Which evidence best addresses climate trends?",
+      "choices": [
+        "One chilly afternoon",
+        "Long-term global temperature records",
+        "A single storm photo"
+      ],
+      "correctIndex": 1,
+      "explanation": "Weather describes short-term conditions; climate concerns statistical patterns over long periods."
+    },
+    "deeper": "Use multiple independent indicators such as ocean heat and ice mass.",
+    "sources": [
+      "https://science.nasa.gov/climate-change/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "sponge-050",
+    "topic": "nature",
+    "subtopic": "Ecology",
+    "difficulty": "beginner",
+    "title": "The keystone species effect",
+    "hook": "Can one species reshape an ecosystem?",
+    "explanation": "Some species have outsized ecological influence relative to their abundance because many interactions depend on them.",
+    "quiz": {
+      "question": "Which describes a keystone species?",
+      "choices": [
+        "Always the most numerous species",
+        "Always the largest predator",
+        "Disproportionately strong ecosystem effects"
+      ],
+      "correctIndex": 2,
+      "explanation": "Some species have outsized ecological influence relative to their abundance because many interactions depend on them."
+    },
+    "deeper": "Effects depend on the local food web and ecological context.",
+    "sources": [
+      "https://www.nps.gov/subjects/biology/index.htm"
+    ],
+    "paths": []
   }
 ]
