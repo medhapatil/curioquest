@@ -1,0 +1,34 @@
+[
+  {
+    "id": "ai",
+    "name": "AI & Technology"
+  },
+  {
+    "id": "healthai",
+    "name": "Healthcare AI"
+  },
+  {
+    "id": "women",
+    "name": "Women’s Health & Psychology"
+  },
+  {
+    "id": "philosophy",
+    "name": "Philosophy"
+  },
+  {
+    "id": "history",
+    "name": "History & Politics"
+  },
+  {
+    "id": "culture",
+    "name": "Fashion, Art & Culture"
+  },
+  {
+    "id": "math",
+    "name": "Economics & Mathematics"
+  },
+  {
+    "id": "nature",
+    "name": "Nature & Sustainability"
+  }
+]

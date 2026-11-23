@@ -1,0 +1,2626 @@
+[
+  {
+    "id": "ai-001",
+    "topic": "ai",
+    "subtopic": "ML",
+    "difficulty": "beginner",
+    "title": "Why models overfit",
+    "hook": "Why can a model ace training data and fail on new cases?",
+    "explanation": "Overfitting happens when a model learns noise or incidental patterns rather than transferable structure.",
+    "quiz": {
+      "question": "Which evaluation best detects overfitting?",
+      "choices": [
+        "Performance on unseen held-out data",
+        "Number of parameters",
+        "Training accuracy alone"
+      ],
+      "correctIndex": 0,
+      "explanation": "Overfitting happens when a model learns noise or incidental patterns rather than transferable structure."
+    },
+    "deeper": "Compare training and validation curves; leakage can make even validation results misleading.",
+    "sources": [
+      "https://developers.google.com/machine-learning/crash-course/overfitting/overview"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "ai-002",
+    "topic": "ai",
+    "subtopic": "ML",
+    "difficulty": "beginner",
+    "title": "Supervised learning",
+    "hook": "How does an algorithm learn from examples?",
+    "explanation": "Supervised learning uses input-output pairs to learn a mapping for future predictions.",
+    "quiz": {
+      "question": "What does supervised learning require?",
+      "choices": [
+        "Labeled examples",
+        "Only rewards",
+        "No data"
+      ],
+      "correctIndex": 0,
+      "explanation": "Supervised learning uses input-output pairs to learn a mapping for future predictions."
+    },
+    "deeper": "Labels may be noisy, expensive, or reflect past human bias.",
+    "sources": [
+      "https://developers.google.com/machine-learning/intro-to-ml"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "ai-003",
+    "topic": "ai",
+    "subtopic": "AI",
+    "difficulty": "intermediate",
+    "title": "What is a transformer?",
+    "hook": "Why can language models connect distant words?",
+    "explanation": "Transformers use attention mechanisms to combine information from different positions in a sequence.",
+    "quiz": {
+      "question": "What is a central transformer mechanism?",
+      "choices": [
+        "Gradient-free search",
+        "K-means",
+        "Attention"
+      ],
+      "correctIndex": 2,
+      "explanation": "Transformers use attention mechanisms to combine information from different positions in a sequence."
+    },
+    "deeper": "Attention is not a guarantee of reasoning or factual accuracy.",
+    "sources": [
+      "https://arxiv.org/abs/1706.03762"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "ai-004",
+    "topic": "ai",
+    "subtopic": "PM",
+    "difficulty": "beginner",
+    "title": "The baseline challenge",
+    "hook": "Your AI prototype is impressive. What should you compare it against?",
+    "explanation": "A baseline is a simpler existing method that establishes whether complexity creates useful value.",
+    "quiz": {
+      "question": "Best first comparison?",
+      "choices": [
+        "A random unrelated product",
+        "Only a demo video",
+        "Current workflow or simple baseline"
+      ],
+      "correctIndex": 2,
+      "explanation": "A baseline is a simpler existing method that establishes whether complexity creates useful value."
+    },
+    "deeper": "A rules-based solution can outperform a costly model in reliability and maintenance.",
+    "sources": [],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "ai-005",
+    "topic": "ai",
+    "subtopic": "AI",
+    "difficulty": "beginner",
+    "title": "What is retrieval augmentation?",
+    "hook": "How can an LLM use documents not memorized during training?",
+    "explanation": "Retrieval-augmented generation retrieves relevant documents and supplies them as context to a model.",
+    "quiz": {
+      "question": "What does retrieval add?",
+      "choices": [
+        "Automatic regulatory approval",
+        "Guaranteed truth",
+        "External context"
+      ],
+      "correctIndex": 2,
+      "explanation": "Retrieval-augmented generation retrieves relevant documents and supplies them as context to a model."
+    },
+    "deeper": "Retrieval can still surface irrelevant or outdated evidence; verify citations.",
+    "sources": [
+      "https://arxiv.org/abs/2005.11401"
+    ],
+    "paths": []
+  },
+  {
+    "id": "ai-006",
+    "topic": "ai",
+    "subtopic": "ML",
+    "difficulty": "intermediate",
+    "title": "Precision versus recall",
+    "hook": "When should a detector avoid missing cases?",
+    "explanation": "Recall measures the fraction of actual positives found; precision measures the fraction of predicted positives that are correct.",
+    "quiz": {
+      "question": "Which metric directly measures positives found?",
+      "choices": [
+        "Precision",
+        "Recall",
+        "Specificity"
+      ],
+      "correctIndex": 1,
+      "explanation": "Recall measures the fraction of actual positives found; precision measures the fraction of predicted positives that are correct."
+    },
+    "deeper": "Threshold choices trade off false positives and false negatives.",
+    "sources": [
+      "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "ai-007",
+    "topic": "ai",
+    "subtopic": "AI",
+    "difficulty": "beginner",
+    "title": "Embedding spaces",
+    "hook": "How can text become searchable by meaning?",
+    "explanation": "Embedding models map items into vectors so similar items can be near one another in a learned space.",
+    "quiz": {
+      "question": "An embedding is primarily a…",
+      "choices": [
+        "PDF document",
+        "Database password",
+        "Numeric vector representation"
+      ],
+      "correctIndex": 2,
+      "explanation": "Embedding models map items into vectors so similar items can be near one another in a learned space."
+    },
+    "deeper": "Similarity depends on the model, domain, and distance measure.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "ai-008",
+    "topic": "ai",
+    "subtopic": "PM",
+    "difficulty": "beginner",
+    "title": "Product metrics that matter",
+    "hook": "Your chatbot has many clicks. Is it helping users?",
+    "explanation": "Activity metrics show usage, but outcome metrics capture whether the user goal was achieved.",
+    "quiz": {
+      "question": "Which is closer to user value?",
+      "choices": [
+        "Task completion with quality",
+        "Number of button colors",
+        "Raw page impressions"
+      ],
+      "correctIndex": 0,
+      "explanation": "Activity metrics show usage, but outcome metrics capture whether the user goal was achieved."
+    },
+    "deeper": "Pair outcome metrics with safety, retention, and user-reported experience.",
+    "sources": [],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "ai-009",
+    "topic": "ai",
+    "subtopic": "AI",
+    "difficulty": "intermediate",
+    "title": "The hallucination problem",
+    "hook": "Why can a fluent answer still be false?",
+    "explanation": "Generative models predict plausible outputs; fluency does not establish factual grounding.",
+    "quiz": {
+      "question": "Best mitigation for high-stakes claims?",
+      "choices": [
+        "Higher temperature",
+        "Verification against trusted evidence",
+        "Longer prompts only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Generative models predict plausible outputs; fluency does not establish factual grounding."
+    },
+    "deeper": "Use retrieval, constrained workflows, and human review as appropriate.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "ai-010",
+    "topic": "ai",
+    "subtopic": "ML",
+    "difficulty": "beginner",
+    "title": "Data leakage",
+    "hook": "Can a model accidentally see tomorrow’s answer today?",
+    "explanation": "Data leakage occurs when training or evaluation uses information unavailable at prediction time.",
+    "quiz": {
+      "question": "Which is leakage?",
+      "choices": [
+        "Removing identifiers",
+        "Using future outcomes as input",
+        "Splitting data by time"
+      ],
+      "correctIndex": 1,
+      "explanation": "Data leakage occurs when training or evaluation uses information unavailable at prediction time."
+    },
+    "deeper": "For longitudinal datasets, split by time and sometimes by person or site.",
+    "sources": [],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "ai-011",
+    "topic": "ai",
+    "subtopic": "AI",
+    "difficulty": "beginner",
+    "title": "Small versus large models",
+    "hook": "Is the biggest model always the best product choice?",
+    "explanation": "Smaller models can be faster, cheaper, and easier to run privately, with possible quality tradeoffs.",
+    "quiz": {
+      "question": "Which factor belongs in model selection?",
+      "choices": [
+        "Latency and task accuracy",
+        "Parameter count alone",
+        "Logo design"
+      ],
+      "correctIndex": 0,
+      "explanation": "Smaller models can be faster, cheaper, and easier to run privately, with possible quality tradeoffs."
+    },
+    "deeper": "Benchmark on the real distribution and include operating costs.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "ai-012",
+    "topic": "ai",
+    "subtopic": "AI",
+    "difficulty": "intermediate",
+    "title": "Human-in-the-loop",
+    "hook": "When should a human review an AI decision?",
+    "explanation": "Human review is valuable when errors are consequential, uncertainty is high, or accountability requires oversight.",
+    "quiz": {
+      "question": "A useful review design should…",
+      "choices": [
+        "Approve every output automatically",
+        "Hide confidence and evidence",
+        "Make uncertain cases easy to escalate"
+      ],
+      "correctIndex": 2,
+      "explanation": "Human review is valuable when errors are consequential, uncertainty is high, or accountability requires oversight."
+    },
+    "deeper": "Reviewers need time, context, and authority to correct mistakes.",
+    "sources": [],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "ai-013",
+    "topic": "ai",
+    "subtopic": "PM",
+    "difficulty": "beginner",
+    "title": "Experiment before scaling",
+    "hook": "Your team wants to launch to everyone. What comes first?",
+    "explanation": "A staged rollout can measure impact and detect failures before broad exposure.",
+    "quiz": {
+      "question": "Best first step?",
+      "choices": [
+        "Small monitored pilot",
+        "Remove telemetry",
+        "Global release immediately"
+      ],
+      "correctIndex": 0,
+      "explanation": "A staged rollout can measure impact and detect failures before broad exposure."
+    },
+    "deeper": "Define stop conditions and compare outcomes to a baseline.",
+    "sources": [],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "healthai-001",
+    "topic": "healthai",
+    "subtopic": "PM scenario",
+    "difficulty": "beginner",
+    "title": "Triage app launch",
+    "hook": "Your symptom checker flags too few urgent cases. What now?",
+    "explanation": "In triage, missing urgent cases can be particularly harmful; assess sensitivity, severity, and clinical workflow before launch.",
+    "quiz": {
+      "question": "Best PM response?",
+      "choices": [
+        "Hide false negatives",
+        "Ship because engagement is high",
+        "Pause rollout and validate safety"
+      ],
+      "correctIndex": 2,
+      "explanation": "In triage, missing urgent cases can be particularly harmful; assess sensitivity, severity, and clinical workflow before launch."
+    },
+    "deeper": "Escalation rules and prospective clinical evaluation are essential.",
+    "sources": [
+      "https://www.fda.gov/medical-devices/software-medical-device-samd"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "healthai-002",
+    "topic": "healthai",
+    "subtopic": "Data",
+    "difficulty": "beginner",
+    "title": "What is an EHR?",
+    "hook": "Why is medical data so hard to combine?",
+    "explanation": "Electronic health records store clinical information, but formats, coding practices, and workflows vary across organizations.",
+    "quiz": {
+      "question": "A key interoperability obstacle is…",
+      "choices": [
+        "Different standards and workflows",
+        "All hospitals use one format",
+        "Patients never change clinics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Electronic health records store clinical information, but formats, coding practices, and workflows vary across organizations."
+    },
+    "deeper": "FHIR helps exchange structured healthcare information but does not solve all semantic issues.",
+    "sources": [
+      "https://www.healthit.gov/topic/standards-technology/standards/fhir"
+    ],
+    "paths": [
+      "health-pm",
+      "bioinformatics"
+    ]
+  },
+  {
+    "id": "healthai-003",
+    "topic": "healthai",
+    "subtopic": "PM scenario",
+    "difficulty": "intermediate",
+    "title": "The silent subgroup",
+    "hook": "Your model works overall but poorly for one age group.",
+    "explanation": "Aggregate metrics can hide clinically important differences between patient subgroups.",
+    "quiz": {
+      "question": "What should the PM request?",
+      "choices": [
+        "Only overall accuracy",
+        "Stratified performance evaluation",
+        "Fewer user interviews"
+      ],
+      "correctIndex": 1,
+      "explanation": "Aggregate metrics can hide clinically important differences between patient subgroups."
+    },
+    "deeper": "Subgroups require sufficient sample sizes and clinically meaningful outcomes.",
+    "sources": [
+      "https://www.who.int/publications/i/item/9789240029200"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "healthai-004",
+    "topic": "healthai",
+    "subtopic": "Evaluation",
+    "difficulty": "beginner",
+    "title": "Calibration matters",
+    "hook": "What does a 20% risk score actually mean?",
+    "explanation": "A calibrated model predicts outcomes at roughly the stated frequency among similarly scored cases.",
+    "quiz": {
+      "question": "A calibrated 20% risk group should have about…",
+      "choices": [
+        "0% observed events",
+        "20% observed events",
+        "100% observed events"
+      ],
+      "correctIndex": 1,
+      "explanation": "A calibrated model predicts outcomes at roughly the stated frequency among similarly scored cases."
+    },
+    "deeper": "Calibration can drift across hospitals and over time.",
+    "sources": [],
+    "paths": [
+      "health-pm",
+      "bioinformatics"
+    ]
+  },
+  {
+    "id": "healthai-005",
+    "topic": "healthai",
+    "subtopic": "Data",
+    "difficulty": "beginner",
+    "title": "The missingness clue",
+    "hook": "What if a lab test is missing because the doctor was unconcerned?",
+    "explanation": "Clinical data can be missing for reasons related to patient condition or clinician decisions.",
+    "quiz": {
+      "question": "Why does this matter?",
+      "choices": [
+        "Missing values are always random",
+        "Missingness may carry selection bias",
+        "It guarantees a clean dataset"
+      ],
+      "correctIndex": 1,
+      "explanation": "Clinical data can be missing for reasons related to patient condition or clinician decisions."
+    },
+    "deeper": "Investigate missingness mechanisms before imputation.",
+    "sources": [],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "healthai-006",
+    "topic": "healthai",
+    "subtopic": "PM scenario",
+    "difficulty": "intermediate",
+    "title": "Clinician workflow",
+    "hook": "Doctors ignore your AI alert. Is accuracy the only problem?",
+    "explanation": "Even accurate alerts can fail when poorly timed, hard to interpret, or disruptive to care.",
+    "quiz": {
+      "question": "Best discovery method?",
+      "choices": [
+        "Observe real clinical workflow",
+        "Add more popups",
+        "Remove user feedback"
+      ],
+      "correctIndex": 0,
+      "explanation": "Even accurate alerts can fail when poorly timed, hard to interpret, or disruptive to care."
+    },
+    "deeper": "Measure alert burden and downstream actions, not just clicks.",
+    "sources": [],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "healthai-007",
+    "topic": "healthai",
+    "subtopic": "Regulation",
+    "difficulty": "beginner",
+    "title": "Software as a medical device",
+    "hook": "When might software be regulated as a medical device?",
+    "explanation": "Some software functions with medical purposes may fall under device oversight, depending on intended use and jurisdiction.",
+    "quiz": {
+      "question": "What matters especially?",
+      "choices": [
+        "Intended medical use and function",
+        "App icon color",
+        "Number of downloads"
+      ],
+      "correctIndex": 0,
+      "explanation": "Some software functions with medical purposes may fall under device oversight, depending on intended use and jurisdiction."
+    },
+    "deeper": "Regulatory classification is context-specific; seek qualified advice.",
+    "sources": [
+      "https://www.fda.gov/medical-devices/digital-health-center-excellence/software-medical-device-samd"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "healthai-008",
+    "topic": "healthai",
+    "subtopic": "Ethics",
+    "difficulty": "beginner",
+    "title": "Consent and reuse",
+    "hook": "Can patient data collected for care always be reused for AI?",
+    "explanation": "Research and product reuse may require legal bases, privacy safeguards, governance, and sometimes consent.",
+    "quiz": {
+      "question": "What is the best default?",
+      "choices": [
+        "Ignore data minimization",
+        "Assume all data is public",
+        "Check permitted use and governance"
+      ],
+      "correctIndex": 2,
+      "explanation": "Research and product reuse may require legal bases, privacy safeguards, governance, and sometimes consent."
+    },
+    "deeper": "HIPAA, institutional policies, and other laws can apply differently.",
+    "sources": [
+      "https://www.hhs.gov/hipaa/for-professionals/index.html"
+    ],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "healthai-009",
+    "topic": "healthai",
+    "subtopic": "Evaluation",
+    "difficulty": "intermediate",
+    "title": "External validation",
+    "hook": "Why test at a second hospital?",
+    "explanation": "A model can perform well at its development site but degrade with different populations, devices, or practices.",
+    "quiz": {
+      "question": "What does external validation test?",
+      "choices": [
+        "Generalization to another setting",
+        "Training speed",
+        "App store ranking"
+      ],
+      "correctIndex": 0,
+      "explanation": "A model can perform well at its development site but degrade with different populations, devices, or practices."
+    },
+    "deeper": "Prospective validation further tests real-world workflows.",
+    "sources": [],
+    "paths": [
+      "health-pm",
+      "bioinformatics"
+    ]
+  },
+  {
+    "id": "healthai-010",
+    "topic": "healthai",
+    "subtopic": "PM scenario",
+    "difficulty": "beginner",
+    "title": "Choosing the outcome",
+    "hook": "Your model predicts hospital readmission. What should you ask?",
+    "explanation": "A prediction is only useful if a feasible intervention can improve a meaningful outcome.",
+    "quiz": {
+      "question": "Most useful PM question?",
+      "choices": [
+        "Can we add more charts?",
+        "What action changes patient outcomes?",
+        "How many model layers?"
+      ],
+      "correctIndex": 1,
+      "explanation": "A prediction is only useful if a feasible intervention can improve a meaningful outcome."
+    },
+    "deeper": "Evaluate whether acting on predictions benefits patients and avoids unintended harms.",
+    "sources": [],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "healthai-011",
+    "topic": "healthai",
+    "subtopic": "Data",
+    "difficulty": "beginner",
+    "title": "Clinical coding",
+    "hook": "Why are ICD codes imperfect research labels?",
+    "explanation": "Billing and diagnosis codes serve administrative purposes and can differ from confirmed clinical phenotypes.",
+    "quiz": {
+      "question": "A code should be treated as…",
+      "choices": [
+        "A proxy needing validation",
+        "A genomic sequence",
+        "A perfect diagnosis"
+      ],
+      "correctIndex": 0,
+      "explanation": "Billing and diagnosis codes serve administrative purposes and can differ from confirmed clinical phenotypes."
+    },
+    "deeper": "Chart review or validated phenotyping may improve labels.",
+    "sources": [
+      "https://www.cdc.gov/nchs/icd/index.htm"
+    ],
+    "paths": [
+      "health-pm",
+      "bioinformatics"
+    ]
+  },
+  {
+    "id": "healthai-012",
+    "topic": "healthai",
+    "subtopic": "Safety",
+    "difficulty": "intermediate",
+    "title": "Dataset shift",
+    "hook": "Why monitor a model after deployment?",
+    "explanation": "Patient populations, care pathways, and measurement practices can change, reducing performance.",
+    "quiz": {
+      "question": "Which monitoring is useful?",
+      "choices": [
+        "Outcome and subgroup drift",
+        "Only server uptime",
+        "Only login count"
+      ],
+      "correctIndex": 0,
+      "explanation": "Patient populations, care pathways, and measurement practices can change, reducing performance."
+    },
+    "deeper": "Monitoring needs clear escalation and retraining governance.",
+    "sources": [],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "healthai-013",
+    "topic": "healthai",
+    "subtopic": "PM scenario",
+    "difficulty": "beginner",
+    "title": "A safer MVP",
+    "hook": "You want to build an AI clinical assistant with no trial data.",
+    "explanation": "A lower-risk MVP can start with administrative workflow support rather than autonomous diagnosis.",
+    "quiz": {
+      "question": "Best initial scope?",
+      "choices": [
+        "Drafting nonclinical scheduling summaries",
+        "Automatic cancer diagnosis",
+        "Unreviewed medication prescribing"
+      ],
+      "correctIndex": 0,
+      "explanation": "A lower-risk MVP can start with administrative workflow support rather than autonomous diagnosis."
+    },
+    "deeper": "Even administrative tools require privacy and accuracy controls.",
+    "sources": [],
+    "paths": [
+      "health-pm"
+    ]
+  },
+  {
+    "id": "women-001",
+    "topic": "women",
+    "subtopic": "Health",
+    "difficulty": "beginner",
+    "title": "Understanding PCOS",
+    "hook": "Is PCOS only about ovarian cysts?",
+    "explanation": "Polycystic ovary syndrome is a heterogeneous endocrine condition; diagnosis considers symptoms and criteria, not cysts alone.",
+    "quiz": {
+      "question": "Which statement is most accurate?",
+      "choices": [
+        "PCOS has multiple possible features",
+        "PCOS always causes infertility",
+        "Every patient has cysts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Polycystic ovary syndrome is a heterogeneous endocrine condition; diagnosis considers symptoms and criteria, not cysts alone."
+    },
+    "deeper": "Diagnostic criteria vary with age and clinical context.",
+    "sources": [
+      "https://www.who.int/news-room/fact-sheets/detail/polycystic-ovary-syndrome"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-002",
+    "topic": "women",
+    "subtopic": "Health",
+    "difficulty": "beginner",
+    "title": "Endometriosis basics",
+    "hook": "Why can endometriosis be difficult to diagnose?",
+    "explanation": "Endometriosis involves tissue resembling uterine lining outside the uterus; symptoms and diagnostic pathways vary.",
+    "quiz": {
+      "question": "Which is possible?",
+      "choices": [
+        "Pain severity varies widely",
+        "A normal scan always rules it out",
+        "Pain always matches lesion size"
+      ],
+      "correctIndex": 0,
+      "explanation": "Endometriosis involves tissue resembling uterine lining outside the uterus; symptoms and diagnostic pathways vary."
+    },
+    "deeper": "Some imaging cannot detect superficial disease; consult clinical guidance.",
+    "sources": [
+      "https://www.who.int/news-room/fact-sheets/detail/endometriosis"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-003",
+    "topic": "women",
+    "subtopic": "Research",
+    "difficulty": "intermediate",
+    "title": "The evidence gap",
+    "hook": "Why should researchers analyze sex and gender?",
+    "explanation": "Biological and social differences may affect exposure, symptoms, care access, and treatment response.",
+    "quiz": {
+      "question": "Best research practice?",
+      "choices": [
+        "Plan appropriate subgroup analyses",
+        "Exclude women by default",
+        "Assume identical outcomes"
+      ],
+      "correctIndex": 0,
+      "explanation": "Biological and social differences may affect exposure, symptoms, care access, and treatment response."
+    },
+    "deeper": "Avoid simplistic binaries when collecting relevant biological and social variables.",
+    "sources": [
+      "https://orwh.od.nih.gov/sex-gender"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-004",
+    "topic": "women",
+    "subtopic": "Psychology",
+    "difficulty": "beginner",
+    "title": "Confirmation bias",
+    "hook": "Why do we notice facts that support our belief?",
+    "explanation": "Confirmation bias is a tendency to seek or interpret evidence in ways that favor existing expectations.",
+    "quiz": {
+      "question": "Which practice helps?",
+      "choices": [
+        "Ignore base rates",
+        "Only read agreeable sources",
+        "Seek disconfirming evidence"
+      ],
+      "correctIndex": 2,
+      "explanation": "Confirmation bias is a tendency to seek or interpret evidence in ways that favor existing expectations."
+    },
+    "deeper": "Precommit to what evidence would change your mind.",
+    "sources": [],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-005",
+    "topic": "women",
+    "subtopic": "Health",
+    "difficulty": "beginner",
+    "title": "The menstrual cycle",
+    "hook": "What triggers ovulation?",
+    "explanation": "A surge in luteinizing hormone usually precedes ovulation during an ovulatory menstrual cycle.",
+    "quiz": {
+      "question": "Which hormone surges before ovulation?",
+      "choices": [
+        "Insulin only",
+        "Luteinizing hormone",
+        "Melatonin"
+      ],
+      "correctIndex": 1,
+      "explanation": "A surge in luteinizing hormone usually precedes ovulation during an ovulatory menstrual cycle."
+    },
+    "deeper": "Cycle length and timing vary; calendar prediction is imperfect.",
+    "sources": [
+      "https://www.nichd.nih.gov/health/topics/menstruation/conditioninfo"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-006",
+    "topic": "women",
+    "subtopic": "Health",
+    "difficulty": "intermediate",
+    "title": "Fertility probabilities",
+    "hook": "Why does fertility change with age?",
+    "explanation": "Oocyte quantity and quality tend to decline with age, but individual fertility varies substantially.",
+    "quiz": {
+      "question": "Which is most accurate?",
+      "choices": [
+        "Age has no relationship",
+        "Everyone becomes infertile at 30",
+        "Population trends do not predict an individual exactly"
+      ],
+      "correctIndex": 2,
+      "explanation": "Oocyte quantity and quality tend to decline with age, but individual fertility varies substantially."
+    },
+    "deeper": "Fertility assessment and planning should be individualized.",
+    "sources": [
+      "https://www.acog.org/womens-health/faqs/evaluating-infertility"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-007",
+    "topic": "women",
+    "subtopic": "Psychology",
+    "difficulty": "beginner",
+    "title": "Cognitive reappraisal",
+    "hook": "Can changing interpretation change emotion?",
+    "explanation": "Cognitive reappraisal involves reframing how a situation is understood and can influence emotional responses.",
+    "quiz": {
+      "question": "Which is reappraisal?",
+      "choices": [
+        "Suppressing every emotion",
+        "Considering an alternative explanation",
+        "Avoiding all situations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cognitive reappraisal involves reframing how a situation is understood and can influence emotional responses."
+    },
+    "deeper": "Reappraisal is one strategy, not a substitute for addressing real problems.",
+    "sources": [],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-008",
+    "topic": "women",
+    "subtopic": "Health",
+    "difficulty": "beginner",
+    "title": "Hormone variability",
+    "hook": "Why is one hormone measurement sometimes misleading?",
+    "explanation": "Many hormone levels fluctuate by cycle phase, time of day, medication, and physiology.",
+    "quiz": {
+      "question": "What helps interpretation?",
+      "choices": [
+        "Timing and clinical context",
+        "One universal cutoff",
+        "Ignoring cycle phase"
+      ],
+      "correctIndex": 0,
+      "explanation": "Many hormone levels fluctuate by cycle phase, time of day, medication, and physiology."
+    },
+    "deeper": "Testing strategy depends on the clinical question.",
+    "sources": [],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-009",
+    "topic": "women",
+    "subtopic": "Research",
+    "difficulty": "intermediate",
+    "title": "Trial representation",
+    "hook": "Why does clinical trial diversity matter?",
+    "explanation": "Representation supports understanding of whether benefits and harms differ across populations.",
+    "quiz": {
+      "question": "Best trial design goal?",
+      "choices": [
+        "Assume generalization",
+        "Test only one convenient subgroup",
+        "Recruit populations relevant to intended users"
+      ],
+      "correctIndex": 2,
+      "explanation": "Representation supports understanding of whether benefits and harms differ across populations."
+    },
+    "deeper": "Representation alone is insufficient without meaningful analysis.",
+    "sources": [
+      "https://www.fda.gov/consumers/womens-health-topics/women-clinical-trials"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-010",
+    "topic": "women",
+    "subtopic": "Psychology",
+    "difficulty": "beginner",
+    "title": "Availability heuristic",
+    "hook": "Why does a vivid story feel more likely than a statistic?",
+    "explanation": "The availability heuristic judges likelihood partly by how easily examples come to mind.",
+    "quiz": {
+      "question": "What corrects this?",
+      "choices": [
+        "Collect only anecdotes",
+        "Check base-rate data",
+        "Trust vividness"
+      ],
+      "correctIndex": 1,
+      "explanation": "The availability heuristic judges likelihood partly by how easily examples come to mind."
+    },
+    "deeper": "Stories can highlight harms, but frequency needs representative evidence.",
+    "sources": [],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-011",
+    "topic": "women",
+    "subtopic": "PM scenario",
+    "difficulty": "beginner",
+    "title": "Period app privacy",
+    "hook": "Your cycle app requests precise location for symptom tracking.",
+    "explanation": "Sensitive reproductive data deserves purpose limitation, minimal collection, and transparent user control.",
+    "quiz": {
+      "question": "Best product decision?",
+      "choices": [
+        "Sell raw records silently",
+        "Collect everything by default",
+        "Avoid unnecessary location collection"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sensitive reproductive data deserves purpose limitation, minimal collection, and transparent user control."
+    },
+    "deeper": "Privacy-by-design can improve trust and reduce risk.",
+    "sources": [
+      "https://www.ftc.gov/business-guidance/privacy-security"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-012",
+    "topic": "women",
+    "subtopic": "Health",
+    "difficulty": "intermediate",
+    "title": "Perimenopause",
+    "hook": "Does menopause happen overnight?",
+    "explanation": "Perimenopause is a transition with changing menstrual patterns and symptoms before menopause.",
+    "quiz": {
+      "question": "Which is true?",
+      "choices": [
+        "Every person has identical symptoms",
+        "It always lasts one week",
+        "The transition can span years"
+      ],
+      "correctIndex": 2,
+      "explanation": "Perimenopause is a transition with changing menstrual patterns and symptoms before menopause."
+    },
+    "deeper": "Menopause is defined retrospectively after 12 months without menstruation in appropriate contexts.",
+    "sources": [
+      "https://www.nia.nih.gov/health/menopause"
+    ],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "women-013",
+    "topic": "women",
+    "subtopic": "Psychology",
+    "difficulty": "beginner",
+    "title": "Correlation and stress",
+    "hook": "Does an association between stress and illness prove causation?",
+    "explanation": "Observational associations can reflect confounding, reverse causation, or causal effects.",
+    "quiz": {
+      "question": "What does correlation alone establish?",
+      "choices": [
+        "An association, not causation",
+        "Random assignment",
+        "A proven treatment"
+      ],
+      "correctIndex": 0,
+      "explanation": "Observational associations can reflect confounding, reverse causation, or causal effects."
+    },
+    "deeper": "Longitudinal and experimental evidence can strengthen inference.",
+    "sources": [],
+    "paths": [
+      "womens-health"
+    ]
+  },
+  {
+    "id": "philosophy-001",
+    "topic": "philosophy",
+    "subtopic": "Ethics",
+    "difficulty": "beginner",
+    "title": "The trolley dilemma",
+    "hook": "Can saving more people justify harming one?",
+    "explanation": "The trolley problem contrasts outcome-focused and duty-focused ethical intuitions.",
+    "quiz": {
+      "question": "Which framework emphasizes consequences?",
+      "choices": [
+        "Skepticism",
+        "Deontology alone",
+        "Consequentialism"
+      ],
+      "correctIndex": 2,
+      "explanation": "The trolley problem contrasts outcome-focused and duty-focused ethical intuitions."
+    },
+    "deeper": "Real decisions involve uncertainty and institutional responsibilities.",
+    "sources": [
+      "https://plato.stanford.edu/entries/ethics-deontological/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "philosophy-002",
+    "topic": "philosophy",
+    "subtopic": "Epistemology",
+    "difficulty": "beginner",
+    "title": "What can we know?",
+    "hook": "Is a confident belief the same as knowledge?",
+    "explanation": "Epistemology studies knowledge, justification, evidence, and the limits of belief.",
+    "quiz": {
+      "question": "What does epistemology study?",
+      "choices": [
+        "Only government",
+        "Knowledge and justification",
+        "Only paintings"
+      ],
+      "correctIndex": 1,
+      "explanation": "Epistemology studies knowledge, justification, evidence, and the limits of belief."
+    },
+    "deeper": "Confidence can be high even when evidence is weak.",
+    "sources": [
+      "https://plato.stanford.edu/entries/epistemology/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "philosophy-003",
+    "topic": "philosophy",
+    "subtopic": "Ethics",
+    "difficulty": "intermediate",
+    "title": "The veil of ignorance",
+    "hook": "How would you design society without knowing your place in it?",
+    "explanation": "Rawls used an original-position thought experiment to explore fair principles of justice.",
+    "quiz": {
+      "question": "What is hidden behind the veil?",
+      "choices": [
+        "Every possible law",
+        "Your future social position",
+        "All human history"
+      ],
+      "correctIndex": 1,
+      "explanation": "Rawls used an original-position thought experiment to explore fair principles of justice."
+    },
+    "deeper": "The thought experiment asks us to consider impartiality, not erase real differences.",
+    "sources": [
+      "https://plato.stanford.edu/entries/rawls/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "philosophy-004",
+    "topic": "philosophy",
+    "subtopic": "Logic",
+    "difficulty": "beginner",
+    "title": "A valid argument",
+    "hook": "Can a logically valid argument have false premises?",
+    "explanation": "Validity means that if premises are true, the conclusion must follow; it does not establish the premises.",
+    "quiz": {
+      "question": "Validity guarantees…",
+      "choices": [
+        "Conclusion follows if premises hold",
+        "All premises are true",
+        "The conclusion is popular"
+      ],
+      "correctIndex": 0,
+      "explanation": "Validity means that if premises are true, the conclusion must follow; it does not establish the premises."
+    },
+    "deeper": "Soundness additionally requires true premises.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "philosophy-005",
+    "topic": "philosophy",
+    "subtopic": "Ethics",
+    "difficulty": "beginner",
+    "title": "Virtue ethics",
+    "hook": "What if ethics is about character rather than rules?",
+    "explanation": "Virtue ethics focuses on cultivated traits such as courage, honesty, and practical wisdom.",
+    "quiz": {
+      "question": "Its central focus is…",
+      "choices": [
+        "Only punishment",
+        "Character and virtues",
+        "Only numerical utility"
+      ],
+      "correctIndex": 1,
+      "explanation": "Virtue ethics focuses on cultivated traits such as courage, honesty, and practical wisdom."
+    },
+    "deeper": "Virtues can conflict and require judgment in context.",
+    "sources": [
+      "https://plato.stanford.edu/entries/ethics-virtue/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "philosophy-006",
+    "topic": "philosophy",
+    "subtopic": "Mind",
+    "difficulty": "intermediate",
+    "title": "The experience question",
+    "hook": "Could two people see colors differently?",
+    "explanation": "Qualia refers to subjective aspects of conscious experience, a central topic in philosophy of mind.",
+    "quiz": {
+      "question": "Qualia describes…",
+      "choices": [
+        "Computer memory size",
+        "Subjective experience",
+        "A legal contract"
+      ],
+      "correctIndex": 1,
+      "explanation": "Qualia refers to subjective aspects of conscious experience, a central topic in philosophy of mind."
+    },
+    "deeper": "The explanatory gap remains philosophically contested.",
+    "sources": [
+      "https://plato.stanford.edu/entries/qualia/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "philosophy-007",
+    "topic": "philosophy",
+    "subtopic": "Logic",
+    "difficulty": "beginner",
+    "title": "The straw man",
+    "hook": "Why is a distorted opponent easy to defeat?",
+    "explanation": "A straw-man argument misrepresents a position and then attacks the weaker version.",
+    "quiz": {
+      "question": "Best corrective practice?",
+      "choices": [
+        "Change the subject",
+        "Restate the strongest fair version",
+        "Mock the speaker"
+      ],
+      "correctIndex": 1,
+      "explanation": "A straw-man argument misrepresents a position and then attacks the weaker version."
+    },
+    "deeper": "Steel-manning makes disagreement more productive.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "philosophy-008",
+    "topic": "philosophy",
+    "subtopic": "Ethics",
+    "difficulty": "beginner",
+    "title": "Utilitarian tradeoffs",
+    "hook": "How does utilitarianism evaluate actions?",
+    "explanation": "Classical utilitarianism evaluates actions by their effects on overall well-being.",
+    "quiz": {
+      "question": "Its main concern is…",
+      "choices": [
+        "Aesthetic symmetry",
+        "Birth order",
+        "Aggregate consequences for welfare"
+      ],
+      "correctIndex": 2,
+      "explanation": "Classical utilitarianism evaluates actions by their effects on overall well-being."
+    },
+    "deeper": "Measuring and distributing welfare raises difficult objections.",
+    "sources": [
+      "https://plato.stanford.edu/entries/consequentialism/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "philosophy-009",
+    "topic": "philosophy",
+    "subtopic": "Knowledge",
+    "difficulty": "intermediate",
+    "title": "The ship of Theseus",
+    "hook": "If every part is replaced, is it the same ship?",
+    "explanation": "The Ship of Theseus explores identity and persistence through change.",
+    "quiz": {
+      "question": "The puzzle concerns…",
+      "choices": [
+        "Sea navigation only",
+        "Identity over time",
+        "Probability theory"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Ship of Theseus explores identity and persistence through change."
+    },
+    "deeper": "Identity criteria differ for artifacts, organisms, and persons.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "philosophy-010",
+    "topic": "philosophy",
+    "subtopic": "Politics",
+    "difficulty": "beginner",
+    "title": "Freedom from or freedom to",
+    "hook": "Can freedom mean more than noninterference?",
+    "explanation": "Negative liberty emphasizes absence of interference; positive liberty concerns self-direction or control.",
+    "quiz": {
+      "question": "Negative liberty emphasizes…",
+      "choices": [
+        "Freedom from interference",
+        "A single ideology",
+        "Guaranteed wealth"
+      ],
+      "correctIndex": 0,
+      "explanation": "Negative liberty emphasizes absence of interference; positive liberty concerns self-direction or control."
+    },
+    "deeper": "Both concepts have multiple interpretations and critics.",
+    "sources": [
+      "https://plato.stanford.edu/entries/liberty-positive-negative/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "philosophy-011",
+    "topic": "philosophy",
+    "subtopic": "Logic",
+    "difficulty": "beginner",
+    "title": "Burden of proof",
+    "hook": "Who must support a surprising claim?",
+    "explanation": "Claims should be supported by proportionate evidence; absence of disproof is not proof.",
+    "quiz": {
+      "question": "What supports a strong claim?",
+      "choices": [
+        "Popularity alone",
+        "Repeated assertion",
+        "Strong relevant evidence"
+      ],
+      "correctIndex": 2,
+      "explanation": "Claims should be supported by proportionate evidence; absence of disproof is not proof."
+    },
+    "deeper": "Extraordinary claims warrant especially careful testing.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "philosophy-012",
+    "topic": "philosophy",
+    "subtopic": "Ethics",
+    "difficulty": "intermediate",
+    "title": "Moral luck",
+    "hook": "Should outcomes beyond our control change moral judgment?",
+    "explanation": "Moral luck concerns how factors outside an agent’s control influence moral assessment.",
+    "quiz": {
+      "question": "The central tension is between…",
+      "choices": [
+        "Color and sound",
+        "Control and judgment",
+        "Speed and distance"
+      ],
+      "correctIndex": 1,
+      "explanation": "Moral luck concerns how factors outside an agent’s control influence moral assessment."
+    },
+    "deeper": "Intention, risk, and outcome can be assessed separately.",
+    "sources": [
+      "https://plato.stanford.edu/entries/moral-luck/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "philosophy-013",
+    "topic": "philosophy",
+    "subtopic": "Mind",
+    "difficulty": "beginner",
+    "title": "Free will and determinism",
+    "hook": "Can choices be free in a lawful universe?",
+    "explanation": "Compatibilists argue freedom can coexist with determinism under suitable accounts of agency.",
+    "quiz": {
+      "question": "Compatibilism holds that…",
+      "choices": [
+        "Physics proves ethics",
+        "Free will and determinism may coexist",
+        "No one ever chooses"
+      ],
+      "correctIndex": 1,
+      "explanation": "Compatibilists argue freedom can coexist with determinism under suitable accounts of agency."
+    },
+    "deeper": "Philosophers disagree about what meaningful control requires.",
+    "sources": [
+      "https://plato.stanford.edu/entries/compatibilism/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "history-001",
+    "topic": "history",
+    "subtopic": "History",
+    "difficulty": "beginner",
+    "title": "Printing and power",
+    "hook": "How did movable type transform public debate?",
+    "explanation": "Printing lowered the cost of reproducing texts and helped ideas spread across wider networks.",
+    "quiz": {
+      "question": "Its key effect was…",
+      "choices": [
+        "Cheaper replication of texts",
+        "The end of censorship",
+        "Instant universal literacy"
+      ],
+      "correctIndex": 0,
+      "explanation": "Printing lowered the cost of reproducing texts and helped ideas spread across wider networks."
+    },
+    "deeper": "Effects varied by region, language, and political context.",
+    "sources": [
+      "https://www.britannica.com/technology/printing-press"
+    ],
+    "paths": []
+  },
+  {
+    "id": "history-002",
+    "topic": "history",
+    "subtopic": "Politics",
+    "difficulty": "beginner",
+    "title": "What is federalism?",
+    "hook": "Why can two levels of government make laws?",
+    "explanation": "Federal systems constitutionally divide governing authority between central and regional governments.",
+    "quiz": {
+      "question": "Federalism means…",
+      "choices": [
+        "Constitutionally divided authority",
+        "No national government",
+        "One ruler for life"
+      ],
+      "correctIndex": 0,
+      "explanation": "Federal systems constitutionally divide governing authority between central and regional governments."
+    },
+    "deeper": "The exact division varies across countries.",
+    "sources": [
+      "https://www.britannica.com/topic/federalism"
+    ],
+    "paths": []
+  },
+  {
+    "id": "history-003",
+    "topic": "history",
+    "subtopic": "History",
+    "difficulty": "intermediate",
+    "title": "The Silk Roads",
+    "hook": "Was the Silk Road one road?",
+    "explanation": "The Silk Roads were overlapping land and maritime networks carrying goods, technologies, and beliefs.",
+    "quiz": {
+      "question": "The Silk Roads were…",
+      "choices": [
+        "One paved highway",
+        "Multiple connected trade networks",
+        "Only routes for silk"
+      ],
+      "correctIndex": 1,
+      "explanation": "The Silk Roads were overlapping land and maritime networks carrying goods, technologies, and beliefs."
+    },
+    "deeper": "Trade also transmitted diseases and cultural practices.",
+    "sources": [
+      "https://en.unesco.org/silkroad/about-silk-roads"
+    ],
+    "paths": []
+  },
+  {
+    "id": "history-004",
+    "topic": "history",
+    "subtopic": "Politics",
+    "difficulty": "beginner",
+    "title": "Separation of powers",
+    "hook": "Why split legislative, executive, and judicial functions?",
+    "explanation": "Separation of powers aims to reduce concentrated authority through distinct institutions and checks.",
+    "quiz": {
+      "question": "A core goal is…",
+      "choices": [
+        "Eliminate elections",
+        "Guarantee perfect decisions",
+        "Limit concentrated power"
+      ],
+      "correctIndex": 2,
+      "explanation": "Separation of powers aims to reduce concentrated authority through distinct institutions and checks."
+    },
+    "deeper": "Institutional designs differ between parliamentary and presidential systems.",
+    "sources": [
+      "https://www.archives.gov/founding-docs/constitution"
+    ],
+    "paths": []
+  },
+  {
+    "id": "history-005",
+    "topic": "history",
+    "subtopic": "History",
+    "difficulty": "beginner",
+    "title": "The Green Revolution",
+    "hook": "How did crop yields rise dramatically in the twentieth century?",
+    "explanation": "Improved crop varieties combined with irrigation, fertilizers, and agronomic practices boosted yields in many regions.",
+    "quiz": {
+      "question": "Which contributed?",
+      "choices": [
+        "A single global crop",
+        "High-yield varieties and inputs",
+        "Only social media"
+      ],
+      "correctIndex": 1,
+      "explanation": "Improved crop varieties combined with irrigation, fertilizers, and agronomic practices boosted yields in many regions."
+    },
+    "deeper": "Benefits came with environmental and distributional tradeoffs.",
+    "sources": [
+      "https://www.britannica.com/event/green-revolution"
+    ],
+    "paths": []
+  },
+  {
+    "id": "history-006",
+    "topic": "history",
+    "subtopic": "Politics",
+    "difficulty": "intermediate",
+    "title": "How a bill becomes law",
+    "hook": "Does a proposed US bill become law when one chamber approves?",
+    "explanation": "Ordinarily both chambers must pass the same legislation and it must complete the presidential approval or override process.",
+    "quiz": {
+      "question": "What is usually required?",
+      "choices": [
+        "Both chambers and enactment process",
+        "Only a press release",
+        "Only a committee hearing"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ordinarily both chambers must pass the same legislation and it must complete the presidential approval or override process."
+    },
+    "deeper": "Procedural exceptions and constitutional rules add complexity.",
+    "sources": [
+      "https://www.congress.gov/legislative-process"
+    ],
+    "paths": []
+  },
+  {
+    "id": "history-007",
+    "topic": "history",
+    "subtopic": "History",
+    "difficulty": "beginner",
+    "title": "Why cities formed",
+    "hook": "What made early dense settlements possible?",
+    "explanation": "Agricultural surpluses, trade, institutions, and geography supported urban concentration in many societies.",
+    "quiz": {
+      "question": "A common enabling factor was…",
+      "choices": [
+        "Air travel",
+        "Universal electricity",
+        "Food surplus and specialization"
+      ],
+      "correctIndex": 2,
+      "explanation": "Agricultural surpluses, trade, institutions, and geography supported urban concentration in many societies."
+    },
+    "deeper": "Urbanization emerged in different ways across regions.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "history-008",
+    "topic": "history",
+    "subtopic": "Politics",
+    "difficulty": "beginner",
+    "title": "Proportional representation",
+    "hook": "How can election rules shape parties?",
+    "explanation": "Proportional systems seek to allocate seats in relation to vote share, subject to thresholds and formulas.",
+    "quiz": {
+      "question": "A typical feature is…",
+      "choices": [
+        "No voting",
+        "Seat shares reflecting vote shares",
+        "Only one candidate nationwide"
+      ],
+      "correctIndex": 1,
+      "explanation": "Proportional systems seek to allocate seats in relation to vote share, subject to thresholds and formulas."
+    },
+    "deeper": "District magnitude and thresholds affect outcomes.",
+    "sources": [
+      "https://www.idea.int/data-tools/data/electoral-system-design"
+    ],
+    "paths": []
+  },
+  {
+    "id": "history-009",
+    "topic": "history",
+    "subtopic": "History",
+    "difficulty": "intermediate",
+    "title": "The Columbian exchange",
+    "hook": "How did 1492 reshape global diets?",
+    "explanation": "The Columbian exchange moved crops, animals, pathogens, and people between the Americas and Afro-Eurasia.",
+    "quiz": {
+      "question": "Which is an example?",
+      "choices": [
+        "Potatoes spreading beyond the Americas",
+        "The invention of refrigeration",
+        "The first moon landing"
+      ],
+      "correctIndex": 0,
+      "explanation": "The Columbian exchange moved crops, animals, pathogens, and people between the Americas and Afro-Eurasia."
+    },
+    "deeper": "Disease and colonial violence had devastating consequences for Indigenous peoples.",
+    "sources": [
+      "https://www.britannica.com/event/Columbian-exchange"
+    ],
+    "paths": []
+  },
+  {
+    "id": "history-010",
+    "topic": "history",
+    "subtopic": "Politics",
+    "difficulty": "beginner",
+    "title": "What is judicial review?",
+    "hook": "Can courts invalidate a law?",
+    "explanation": "In some constitutional systems, courts can review legislation for constitutional compatibility.",
+    "quiz": {
+      "question": "Judicial review tests…",
+      "choices": [
+        "Election turnout only",
+        "Restaurant ratings",
+        "Constitutional compatibility"
+      ],
+      "correctIndex": 2,
+      "explanation": "In some constitutional systems, courts can review legislation for constitutional compatibility."
+    },
+    "deeper": "Scope and institutional design vary internationally.",
+    "sources": [
+      "https://www.britannica.com/topic/judicial-review"
+    ],
+    "paths": []
+  },
+  {
+    "id": "history-011",
+    "topic": "history",
+    "subtopic": "History",
+    "difficulty": "beginner",
+    "title": "The scientific revolution",
+    "hook": "Was modern science born in one moment?",
+    "explanation": "Early modern science developed through changing methods, institutions, instruments, and networks over centuries.",
+    "quiz": {
+      "question": "Which change was important?",
+      "choices": [
+        "Ending all disagreement",
+        "A single inventor",
+        "Systematic observation and experimentation"
+      ],
+      "correctIndex": 2,
+      "explanation": "Early modern science developed through changing methods, institutions, instruments, and networks over centuries."
+    },
+    "deeper": "The narrative of a purely European revolution overlooks global knowledge exchange.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "history-012",
+    "topic": "history",
+    "subtopic": "Politics",
+    "difficulty": "intermediate",
+    "title": "Public goods",
+    "hook": "Why might markets underprovide street lighting?",
+    "explanation": "A pure public good is non-rival and non-excludable, making voluntary private financing difficult.",
+    "quiz": {
+      "question": "Which is a typical public-good feature?",
+      "choices": [
+        "Non-excludability",
+        "Only luxury pricing",
+        "Individual ownership of every photon"
+      ],
+      "correctIndex": 0,
+      "explanation": "A pure public good is non-rival and non-excludable, making voluntary private financing difficult."
+    },
+    "deeper": "Many real goods are mixed rather than perfectly public.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "history-013",
+    "topic": "history",
+    "subtopic": "History",
+    "difficulty": "beginner",
+    "title": "The census and the state",
+    "hook": "Why do governments count populations?",
+    "explanation": "Censuses support representation, planning, resource allocation, and research, while raising privacy questions.",
+    "quiz": {
+      "question": "One use of a census is…",
+      "choices": [
+        "Predicting every election exactly",
+        "Replacing all surveys",
+        "Population-based representation"
+      ],
+      "correctIndex": 2,
+      "explanation": "Censuses support representation, planning, resource allocation, and research, while raising privacy questions."
+    },
+    "deeper": "Definitions and undercount can influence political outcomes.",
+    "sources": [
+      "https://www.census.gov/about/history/historical-censuses-and-surveys/census-programs-surveys/geography.html"
+    ],
+    "paths": []
+  },
+  {
+    "id": "culture-001",
+    "topic": "culture",
+    "subtopic": "Fashion",
+    "difficulty": "beginner",
+    "title": "Why silhouettes change",
+    "hook": "How can a hemline signal an era?",
+    "explanation": "Silhouettes reflect materials, technology, social norms, labor, and aesthetic movements.",
+    "quiz": {
+      "question": "What influences silhouettes?",
+      "choices": [
+        "Culture and material constraints",
+        "Only climate",
+        "Only mathematics"
+      ],
+      "correctIndex": 0,
+      "explanation": "Silhouettes reflect materials, technology, social norms, labor, and aesthetic movements."
+    },
+    "deeper": "Fashion histories should consider whose styles were documented.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "culture-002",
+    "topic": "culture",
+    "subtopic": "Art",
+    "difficulty": "beginner",
+    "title": "The rule of thirds",
+    "hook": "Why do off-center compositions often feel dynamic?",
+    "explanation": "The rule of thirds is a compositional heuristic placing subjects near imagined grid lines.",
+    "quiz": {
+      "question": "It is best understood as…",
+      "choices": [
+        "A universal law",
+        "A flexible guideline",
+        "A printing technique"
+      ],
+      "correctIndex": 1,
+      "explanation": "The rule of thirds is a compositional heuristic placing subjects near imagined grid lines."
+    },
+    "deeper": "Artists often break it intentionally for expressive effect.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "culture-003",
+    "topic": "culture",
+    "subtopic": "Design",
+    "difficulty": "intermediate",
+    "title": "Bauhaus principles",
+    "hook": "Why does modern furniture often look geometric?",
+    "explanation": "Bauhaus designers explored links between art, craft, industrial production, and functional form.",
+    "quiz": {
+      "question": "A Bauhaus emphasis was…",
+      "choices": [
+        "Avoiding architecture",
+        "Integrating design and production",
+        "Only hand-painted portraits"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bauhaus designers explored links between art, craft, industrial production, and functional form."
+    },
+    "deeper": "The movement was diverse and not reducible to minimalism.",
+    "sources": [
+      "https://www.bauhaus.de/en/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "culture-004",
+    "topic": "culture",
+    "subtopic": "Art",
+    "difficulty": "beginner",
+    "title": "What is negative space?",
+    "hook": "Can empty space be part of the subject?",
+    "explanation": "Negative space is the area around and between visual elements; it shapes balance and attention.",
+    "quiz": {
+      "question": "Negative space refers to…",
+      "choices": [
+        "Space surrounding subjects",
+        "Only black paint",
+        "A broken canvas"
+      ],
+      "correctIndex": 0,
+      "explanation": "Negative space is the area around and between visual elements; it shapes balance and attention."
+    },
+    "deeper": "Intentional emptiness can improve legibility and mood.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "culture-005",
+    "topic": "culture",
+    "subtopic": "Fashion",
+    "difficulty": "beginner",
+    "title": "The bias cut",
+    "hook": "How can fabric drape without heavy tailoring?",
+    "explanation": "Cutting woven fabric on the bias allows more give and fluid drape.",
+    "quiz": {
+      "question": "Bias cut means cutting…",
+      "choices": [
+        "With a laser always",
+        "Diagonally to the grain",
+        "Only along the selvage"
+      ],
+      "correctIndex": 1,
+      "explanation": "Cutting woven fabric on the bias allows more give and fluid drape."
+    },
+    "deeper": "Madeleine Vionnet is strongly associated with innovative bias-cut designs.",
+    "sources": [
+      "https://www.metmuseum.org/toah/hd/vion/hd_vion.htm"
+    ],
+    "paths": []
+  },
+  {
+    "id": "culture-006",
+    "topic": "culture",
+    "subtopic": "Culture",
+    "difficulty": "intermediate",
+    "title": "Why museums label provenance",
+    "hook": "Why does ownership history matter?",
+    "explanation": "Provenance traces an object’s custody and can reveal authenticity, trade, or contested acquisition.",
+    "quiz": {
+      "question": "Provenance means…",
+      "choices": [
+        "Paint color",
+        "Documented ownership history",
+        "Museum admission price"
+      ],
+      "correctIndex": 1,
+      "explanation": "Provenance traces an object’s custody and can reveal authenticity, trade, or contested acquisition."
+    },
+    "deeper": "Gaps in provenance warrant careful investigation, especially for cultural heritage.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "culture-007",
+    "topic": "culture",
+    "subtopic": "Art",
+    "difficulty": "beginner",
+    "title": "Complementary colors",
+    "hook": "Why do some color pairs create contrast?",
+    "explanation": "In common color-wheel models, complementary hues sit opposite each other and can create strong visual contrast.",
+    "quiz": {
+      "question": "Complementary hues are…",
+      "choices": [
+        "Only grayscale",
+        "Opposite on a color wheel",
+        "Always identical"
+      ],
+      "correctIndex": 1,
+      "explanation": "In common color-wheel models, complementary hues sit opposite each other and can create strong visual contrast."
+    },
+    "deeper": "Color relationships depend on the color model and surrounding context.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "culture-008",
+    "topic": "culture",
+    "subtopic": "Fashion",
+    "difficulty": "beginner",
+    "title": "Why pleats persist",
+    "hook": "How can a garment expand while retaining structure?",
+    "explanation": "Pleats fold fabric to create controlled volume, movement, and visual rhythm.",
+    "quiz": {
+      "question": "A functional role of pleats is…",
+      "choices": [
+        "Making fabric waterproof",
+        "Eliminating seams",
+        "Adding controlled fullness"
+      ],
+      "correctIndex": 2,
+      "explanation": "Pleats fold fabric to create controlled volume, movement, and visual rhythm."
+    },
+    "deeper": "Pleating techniques vary from stitched folds to heat-set synthetic textiles.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "culture-009",
+    "topic": "culture",
+    "subtopic": "Design",
+    "difficulty": "intermediate",
+    "title": "Typography hierarchy",
+    "hook": "How does a page tell your eye where to look?",
+    "explanation": "Size, weight, spacing, and contrast organize reading order and perceived importance.",
+    "quiz": {
+      "question": "Which improves hierarchy?",
+      "choices": [
+        "No spacing",
+        "Consistent visual emphasis",
+        "Ten competing headline styles"
+      ],
+      "correctIndex": 1,
+      "explanation": "Size, weight, spacing, and contrast organize reading order and perceived importance."
+    },
+    "deeper": "Accessibility requires sufficient contrast and readable sizes.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "culture-010",
+    "topic": "culture",
+    "subtopic": "Art",
+    "difficulty": "beginner",
+    "title": "Impressionism and light",
+    "hook": "Why did some painters work outdoors?",
+    "explanation": "Impressionist painters explored fleeting light and perception with visible brushwork and changing color.",
+    "quiz": {
+      "question": "A recurring concern was…",
+      "choices": [
+        "Only religious icons",
+        "Effects of changing light",
+        "Exact photographic duplication"
+      ],
+      "correctIndex": 1,
+      "explanation": "Impressionist painters explored fleeting light and perception with visible brushwork and changing color."
+    },
+    "deeper": "Portable paint tubes supported outdoor practice, among other factors.",
+    "sources": [
+      "https://www.metmuseum.org/toah/hd/imml/hd_imml.htm"
+    ],
+    "paths": []
+  },
+  {
+    "id": "culture-011",
+    "topic": "culture",
+    "subtopic": "Culture",
+    "difficulty": "beginner",
+    "title": "Cultural appropriation",
+    "hook": "When does borrowing become exploitative?",
+    "explanation": "Ethical cultural exchange depends on context, power, credit, consent, and benefit, not simply the presence of influence.",
+    "quiz": {
+      "question": "What matters in evaluating borrowing?",
+      "choices": [
+        "Power and attribution",
+        "Only garment price",
+        "Only geography"
+      ],
+      "correctIndex": 0,
+      "explanation": "Ethical cultural exchange depends on context, power, credit, consent, and benefit, not simply the presence of influence."
+    },
+    "deeper": "Communities may disagree; listen to affected creators.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "culture-012",
+    "topic": "culture",
+    "subtopic": "Design",
+    "difficulty": "intermediate",
+    "title": "Why grids work",
+    "hook": "How can a grid make interfaces feel calm?",
+    "explanation": "Grids align elements and create predictable spatial relationships, reducing cognitive effort.",
+    "quiz": {
+      "question": "A grid primarily supports…",
+      "choices": [
+        "Random placement",
+        "More notifications",
+        "Consistent alignment"
+      ],
+      "correctIndex": 2,
+      "explanation": "Grids align elements and create predictable spatial relationships, reducing cognitive effort."
+    },
+    "deeper": "Breaking a grid can create emphasis when done deliberately.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "culture-013",
+    "topic": "culture",
+    "subtopic": "Fashion",
+    "difficulty": "beginner",
+    "title": "The lifecycle of a trend",
+    "hook": "Why do styles return decades later?",
+    "explanation": "Trends circulate through nostalgia, subcultures, designers, media, and changes in production.",
+    "quiz": {
+      "question": "A plausible driver of revival is…",
+      "choices": [
+        "A fixed 20-year physical law",
+        "Nostalgia and reinterpretation",
+        "A single global authority"
+      ],
+      "correctIndex": 1,
+      "explanation": "Trends circulate through nostalgia, subcultures, designers, media, and changes in production."
+    },
+    "deeper": "Trend cycles are not perfectly periodic or universal.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-001",
+    "topic": "math",
+    "subtopic": "Probability",
+    "difficulty": "beginner",
+    "title": "The base-rate trap",
+    "hook": "A test is 99% accurate. Does a positive mean 99% chance?",
+    "explanation": "Positive predictive value also depends on prevalence and the types of test errors.",
+    "quiz": {
+      "question": "What else matters?",
+      "choices": [
+        "Day of the week only",
+        "Font size",
+        "Underlying prevalence"
+      ],
+      "correctIndex": 2,
+      "explanation": "Positive predictive value also depends on prevalence and the types of test errors."
+    },
+    "deeper": "Bayes’ theorem combines prior probability with evidence.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-002",
+    "topic": "math",
+    "subtopic": "Decision",
+    "difficulty": "beginner",
+    "title": "Opportunity cost",
+    "hook": "What do you give up when you say yes?",
+    "explanation": "Opportunity cost is the value of the best alternative forgone when making a choice.",
+    "quiz": {
+      "question": "Opportunity cost is…",
+      "choices": [
+        "Value of the next-best alternative",
+        "A sunk cost",
+        "Only money spent"
+      ],
+      "correctIndex": 0,
+      "explanation": "Opportunity cost is the value of the best alternative forgone when making a choice."
+    },
+    "deeper": "Time and attention also have opportunity costs.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-003",
+    "topic": "math",
+    "subtopic": "Statistics",
+    "difficulty": "intermediate",
+    "title": "Mean versus median",
+    "hook": "Why can one billionaire skew an average?",
+    "explanation": "The mean responds to extreme values, while the median marks the middle ordered observation.",
+    "quiz": {
+      "question": "Which resists extreme outliers better?",
+      "choices": [
+        "Median",
+        "Mean",
+        "Sum"
+      ],
+      "correctIndex": 0,
+      "explanation": "The mean responds to extreme values, while the median marks the middle ordered observation."
+    },
+    "deeper": "Choose summaries based on distribution and decision context.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-004",
+    "topic": "math",
+    "subtopic": "Economics",
+    "difficulty": "beginner",
+    "title": "Sunk-cost fallacy",
+    "hook": "Should money already spent determine whether to continue?",
+    "explanation": "Irrecoverable past costs should not drive a forward-looking decision about future costs and benefits.",
+    "quiz": {
+      "question": "What matters for the next decision?",
+      "choices": [
+        "Past spending alone",
+        "Future incremental value",
+        "How long the receipt is"
+      ],
+      "correctIndex": 1,
+      "explanation": "Irrecoverable past costs should not drive a forward-looking decision about future costs and benefits."
+    },
+    "deeper": "Emotional attachment makes this difficult in practice.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-005",
+    "topic": "math",
+    "subtopic": "Probability",
+    "difficulty": "beginner",
+    "title": "Expected value",
+    "hook": "Would you take a 50% chance to win $10?",
+    "explanation": "Expected monetary value weights possible outcomes by their probabilities.",
+    "quiz": {
+      "question": "Expected winnings of 50% × $10, otherwise $0?",
+      "choices": [
+        "$10",
+        "$20",
+        "$5"
+      ],
+      "correctIndex": 2,
+      "explanation": "Expected monetary value weights possible outcomes by their probabilities."
+    },
+    "deeper": "Expected value is not the same as risk preference or guaranteed payoff.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-006",
+    "topic": "math",
+    "subtopic": "Math",
+    "difficulty": "intermediate",
+    "title": "Combinatorics of outfits",
+    "hook": "Three shirts and four pants: how many combinations?",
+    "explanation": "The multiplication principle counts independent choices by multiplying their option counts.",
+    "quiz": {
+      "question": "How many outfits?",
+      "choices": [
+        "7",
+        "12",
+        "24"
+      ],
+      "correctIndex": 1,
+      "explanation": "The multiplication principle counts independent choices by multiplying their option counts."
+    },
+    "deeper": "Restrictions between choices can change the count.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-007",
+    "topic": "math",
+    "subtopic": "Statistics",
+    "difficulty": "beginner",
+    "title": "Regression to the mean",
+    "hook": "Why might an extreme performance be followed by an ordinary one?",
+    "explanation": "When outcomes contain random variation, unusually extreme observations often move closer to the average next time.",
+    "quiz": {
+      "question": "Which explanation fits?",
+      "choices": [
+        "Random variation around a stable tendency",
+        "Proof of sabotage",
+        "A universal punishment"
+      ],
+      "correctIndex": 0,
+      "explanation": "When outcomes contain random variation, unusually extreme observations often move closer to the average next time."
+    },
+    "deeper": "Regression to the mean does not imply that all changes are random.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-008",
+    "topic": "math",
+    "subtopic": "Decision",
+    "difficulty": "beginner",
+    "title": "Explore versus exploit",
+    "hook": "Should you try a new café or return to your favorite?",
+    "explanation": "The exploration-exploitation tradeoff balances learning about alternatives against choosing known rewards.",
+    "quiz": {
+      "question": "Exploration is…",
+      "choices": [
+        "Trying uncertain alternatives",
+        "Ignoring feedback",
+        "Always repeating the best-known option"
+      ],
+      "correctIndex": 0,
+      "explanation": "The exploration-exploitation tradeoff balances learning about alternatives against choosing known rewards."
+    },
+    "deeper": "Bandit algorithms formalize this tradeoff.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-009",
+    "topic": "math",
+    "subtopic": "Probability",
+    "difficulty": "intermediate",
+    "title": "Independent events",
+    "hook": "Does a coin remember five heads?",
+    "explanation": "For independent fair flips, the next flip remains 50% heads regardless of prior outcomes.",
+    "quiz": {
+      "question": "Chance of heads next flip?",
+      "choices": [
+        "50%",
+        "0%",
+        "100%"
+      ],
+      "correctIndex": 0,
+      "explanation": "For independent fair flips, the next flip remains 50% heads regardless of prior outcomes."
+    },
+    "deeper": "Real-world processes may not be independent; check the assumption.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-010",
+    "topic": "math",
+    "subtopic": "Economics",
+    "difficulty": "beginner",
+    "title": "Price elasticity",
+    "hook": "Why does a small price increase sometimes cut sales sharply?",
+    "explanation": "Price elasticity of demand measures responsiveness of quantity demanded to price changes.",
+    "quiz": {
+      "question": "Highly elastic demand means…",
+      "choices": [
+        "Price is always zero",
+        "Quantity never changes",
+        "Quantity responds strongly to price"
+      ],
+      "correctIndex": 2,
+      "explanation": "Price elasticity of demand measures responsiveness of quantity demanded to price changes."
+    },
+    "deeper": "Availability of substitutes and time horizon matter.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-011",
+    "topic": "math",
+    "subtopic": "Statistics",
+    "difficulty": "beginner",
+    "title": "Confidence intervals",
+    "hook": "Does a 95% confidence interval mean a 95% chance this fixed parameter moves?",
+    "explanation": "Under repeated sampling, a valid 95% interval procedure covers the fixed parameter in 95% of repetitions.",
+    "quiz": {
+      "question": "The 95% refers to…",
+      "choices": [
+        "Accuracy of every individual estimate",
+        "Long-run coverage of the method",
+        "Probability the parameter changes"
+      ],
+      "correctIndex": 1,
+      "explanation": "Under repeated sampling, a valid 95% interval procedure covers the fixed parameter in 95% of repetitions."
+    },
+    "deeper": "Bayesian credible intervals have a different interpretation.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-012",
+    "topic": "math",
+    "subtopic": "Decision",
+    "difficulty": "intermediate",
+    "title": "The Pareto frontier",
+    "hook": "Can you improve one goal without harming another?",
+    "explanation": "A Pareto-efficient option cannot improve one objective without worsening at least one other.",
+    "quiz": {
+      "question": "Pareto efficiency means…",
+      "choices": [
+        "All outcomes are optimal morally",
+        "Everyone is equally happy",
+        "No free improvement on any objective"
+      ],
+      "correctIndex": 2,
+      "explanation": "A Pareto-efficient option cannot improve one objective without worsening at least one other."
+    },
+    "deeper": "Efficiency alone does not address fairness.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "math-013",
+    "topic": "math",
+    "subtopic": "Economics",
+    "difficulty": "beginner",
+    "title": "Compounding",
+    "hook": "Why does reinvested growth accelerate?",
+    "explanation": "Compounding means returns can accrue on both the original amount and previous returns.",
+    "quiz": {
+      "question": "What produces compounding?",
+      "choices": [
+        "Returns on accumulated returns",
+        "Only a higher salary",
+        "A fixed cash withdrawal"
+      ],
+      "correctIndex": 0,
+      "explanation": "Compounding means returns can accrue on both the original amount and previous returns."
+    },
+    "deeper": "Real returns depend on inflation, taxes, risk, and fees.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "nature-001",
+    "topic": "nature",
+    "subtopic": "Climate",
+    "difficulty": "beginner",
+    "title": "Weather versus climate",
+    "hook": "Can one snowy day disprove global warming?",
+    "explanation": "Weather describes short-term conditions; climate describes long-term patterns and distributions.",
+    "quiz": {
+      "question": "Climate refers to…",
+      "choices": [
+        "Long-term statistical patterns",
+        "One afternoon",
+        "Only temperature"
+      ],
+      "correctIndex": 0,
+      "explanation": "Weather describes short-term conditions; climate describes long-term patterns and distributions."
+    },
+    "deeper": "Extremes can occur within a warming climate.",
+    "sources": [
+      "https://www.nasa.gov/climate-change/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "nature-002",
+    "topic": "nature",
+    "subtopic": "Ecology",
+    "difficulty": "beginner",
+    "title": "Keystone species",
+    "hook": "Can one species shape an entire ecosystem?",
+    "explanation": "A keystone species has an outsized effect on community structure relative to its abundance.",
+    "quiz": {
+      "question": "Keystone means…",
+      "choices": [
+        "Largest animal always",
+        "Disproportionate ecological influence",
+        "Most numerous organism"
+      ],
+      "correctIndex": 1,
+      "explanation": "A keystone species has an outsized effect on community structure relative to its abundance."
+    },
+    "deeper": "Effects depend on the ecosystem and interactions.",
+    "sources": [
+      "https://www.nps.gov/articles/000/keystone-species.htm"
+    ],
+    "paths": []
+  },
+  {
+    "id": "nature-003",
+    "topic": "nature",
+    "subtopic": "Climate",
+    "difficulty": "intermediate",
+    "title": "Carbon sinks",
+    "hook": "Where does emitted carbon dioxide go?",
+    "explanation": "Oceans and terrestrial ecosystems absorb some human CO₂ emissions, while much remains in the atmosphere.",
+    "quiz": {
+      "question": "Which is a carbon sink?",
+      "choices": [
+        "Ocean uptake",
+        "A gasoline engine",
+        "A coal furnace"
+      ],
+      "correctIndex": 0,
+      "explanation": "Oceans and terrestrial ecosystems absorb some human CO₂ emissions, while much remains in the atmosphere."
+    },
+    "deeper": "Sink strength changes with warming and ecosystem conditions.",
+    "sources": [
+      "https://science.nasa.gov/climate-change/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "nature-004",
+    "topic": "nature",
+    "subtopic": "Ecology",
+    "difficulty": "beginner",
+    "title": "Mycorrhizal partners",
+    "hook": "Why do many plants cooperate with fungi?",
+    "explanation": "Mycorrhizal fungi exchange nutrients and water access with plant hosts, often receiving carbon compounds.",
+    "quiz": {
+      "question": "The relationship often involves…",
+      "choices": [
+        "Resource exchange",
+        "Photosynthesis by fungi",
+        "No interaction"
+      ],
+      "correctIndex": 0,
+      "explanation": "Mycorrhizal fungi exchange nutrients and water access with plant hosts, often receiving carbon compounds."
+    },
+    "deeper": "Benefits vary by species and environment.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "nature-005",
+    "topic": "nature",
+    "subtopic": "Sustainability",
+    "difficulty": "beginner",
+    "title": "Lifecycle analysis",
+    "hook": "Is a reusable item always greener after one use?",
+    "explanation": "Life-cycle assessment examines impacts across raw materials, production, transport, use, and disposal.",
+    "quiz": {
+      "question": "What should be compared?",
+      "choices": [
+        "Only purchase price",
+        "Only packaging color",
+        "Full lifecycle impacts"
+      ],
+      "correctIndex": 2,
+      "explanation": "Life-cycle assessment examines impacts across raw materials, production, transport, use, and disposal."
+    },
+    "deeper": "Results depend on usage frequency, energy sources, and assumptions.",
+    "sources": [
+      "https://www.epa.gov/lca"
+    ],
+    "paths": []
+  },
+  {
+    "id": "nature-006",
+    "topic": "nature",
+    "subtopic": "Climate",
+    "difficulty": "intermediate",
+    "title": "Methane and CO₂",
+    "hook": "Why are greenhouse gases not interchangeable?",
+    "explanation": "Methane is more potent per unit mass over shorter horizons but has a shorter atmospheric lifetime than CO₂.",
+    "quiz": {
+      "question": "Which is accurate?",
+      "choices": [
+        "They have identical lifetimes",
+        "Methane has no warming effect",
+        "They differ in lifetime and warming impact"
+      ],
+      "correctIndex": 2,
+      "explanation": "Methane is more potent per unit mass over shorter horizons but has a shorter atmospheric lifetime than CO₂."
+    },
+    "deeper": "The time horizon changes greenhouse-gas comparisons.",
+    "sources": [
+      "https://www.epa.gov/ghgemissions/overview-greenhouse-gases"
+    ],
+    "paths": []
+  },
+  {
+    "id": "nature-007",
+    "topic": "nature",
+    "subtopic": "Ecology",
+    "difficulty": "beginner",
+    "title": "Biodiversity insurance",
+    "hook": "Why can diverse ecosystems be more resilient?",
+    "explanation": "Functional diversity can support ecosystem processes when species respond differently to disturbances.",
+    "quiz": {
+      "question": "A potential benefit is…",
+      "choices": [
+        "More varied responses to stress",
+        "No competition",
+        "Guaranteed immunity to disasters"
+      ],
+      "correctIndex": 0,
+      "explanation": "Functional diversity can support ecosystem processes when species respond differently to disturbances."
+    },
+    "deeper": "Resilience is context-dependent, not automatic.",
+    "sources": [],
+    "paths": []
+  },
+  {
+    "id": "nature-008",
+    "topic": "nature",
+    "subtopic": "Nature",
+    "difficulty": "beginner",
+    "title": "Why wetlands matter",
+    "hook": "Are marshes just unused land?",
+    "explanation": "Wetlands can store carbon, filter water, provide habitat, and buffer floods.",
+    "quiz": {
+      "question": "One wetland function is…",
+      "choices": [
+        "Creating fossil fuels overnight",
+        "Floodwater storage",
+        "Eliminating all storms"
+      ],
+      "correctIndex": 1,
+      "explanation": "Wetlands can store carbon, filter water, provide habitat, and buffer floods."
+    },
+    "deeper": "Restoration success depends on hydrology and ecological context.",
+    "sources": [
+      "https://www.epa.gov/wetlands"
+    ],
+    "paths": []
+  },
+  {
+    "id": "nature-009",
+    "topic": "nature",
+    "subtopic": "Climate",
+    "difficulty": "intermediate",
+    "title": "Albedo feedback",
+    "hook": "Why does melting ice amplify warming?",
+    "explanation": "Bright ice reflects sunlight; darker exposed surfaces absorb more energy, reinforcing warming.",
+    "quiz": {
+      "question": "Lower albedo generally means…",
+      "choices": [
+        "More reflection",
+        "No energy change",
+        "More solar absorption"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bright ice reflects sunlight; darker exposed surfaces absorb more energy, reinforcing warming."
+    },
+    "deeper": "Feedback magnitude varies by region and season.",
+    "sources": [
+      "https://science.nasa.gov/earth/earth-observatory/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "nature-010",
+    "topic": "nature",
+    "subtopic": "Ecology",
+    "difficulty": "beginner",
+    "title": "Invasive species",
+    "hook": "Why can a newcomer disrupt an ecosystem?",
+    "explanation": "Some introduced species spread and cause ecological or economic harm in environments lacking familiar controls.",
+    "quiz": {
+      "question": "An invasive species is typically…",
+      "choices": [
+        "Any migratory bird",
+        "Non-native and harmful in its new range",
+        "Every non-native garden plant"
+      ],
+      "correctIndex": 1,
+      "explanation": "Some introduced species spread and cause ecological or economic harm in environments lacking familiar controls."
+    },
+    "deeper": "Not every introduced species becomes invasive.",
+    "sources": [
+      "https://www.invasivespeciesinfo.gov/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "nature-011",
+    "topic": "nature",
+    "subtopic": "Sustainability",
+    "difficulty": "beginner",
+    "title": "Food waste and emissions",
+    "hook": "Why does wasted food affect climate?",
+    "explanation": "Growing, transporting, and disposing of uneaten food uses resources and generates emissions.",
+    "quiz": {
+      "question": "A useful intervention is…",
+      "choices": [
+        "Prevent avoidable food waste",
+        "Increase landfill disposal",
+        "Discard edible food sooner"
+      ],
+      "correctIndex": 0,
+      "explanation": "Growing, transporting, and disposing of uneaten food uses resources and generates emissions."
+    },
+    "deeper": "Food safety still matters when reducing waste.",
+    "sources": [
+      "https://www.epa.gov/sustainable-management-food"
+    ],
+    "paths": []
+  },
+  {
+    "id": "nature-012",
+    "topic": "nature",
+    "subtopic": "Nature",
+    "difficulty": "intermediate",
+    "title": "Ocean acidification",
+    "hook": "How does atmospheric CO₂ change seawater?",
+    "explanation": "Dissolved CO₂ shifts seawater carbonate chemistry, lowering pH and affecting some calcifying organisms.",
+    "quiz": {
+      "question": "The primary driver is…",
+      "choices": [
+        "Only plastic litter",
+        "Ocean absorption of CO₂",
+        "Only tides"
+      ],
+      "correctIndex": 1,
+      "explanation": "Dissolved CO₂ shifts seawater carbonate chemistry, lowering pH and affecting some calcifying organisms."
+    },
+    "deeper": "Responses differ across species and habitats.",
+    "sources": [
+      "https://oceanservice.noaa.gov/facts/acidification.html"
+    ],
+    "paths": []
+  },
+  {
+    "id": "nature-013",
+    "topic": "nature",
+    "subtopic": "Climate",
+    "difficulty": "beginner",
+    "title": "Adaptation versus mitigation",
+    "hook": "What is the difference between seawalls and clean energy?",
+    "explanation": "Mitigation reduces emissions or enhances sinks; adaptation reduces vulnerability to climate impacts.",
+    "quiz": {
+      "question": "A seawall is mainly…",
+      "choices": [
+        "Carbon capture",
+        "Adaptation",
+        "Mitigation only"
+      ],
+      "correctIndex": 1,
+      "explanation": "Mitigation reduces emissions or enhances sinks; adaptation reduces vulnerability to climate impacts."
+    },
+    "deeper": "Many climate plans need both approaches.",
+    "sources": [
+      "https://www.ipcc.ch/report/ar6/syr/"
+    ],
+    "paths": []
+  },
+  {
+    "id": "bio-001",
+    "topic": "healthai",
+    "subtopic": "DNA",
+    "difficulty": "beginner",
+    "title": "DNA as information",
+    "hook": "How does a cell store inherited instructions?",
+    "explanation": "DNA uses sequences of four nucleotide bases to encode biological information.",
+    "quiz": {
+      "question": "Which are DNA bases?",
+      "choices": [
+        "A, C, G, T",
+        "A, B, C, D",
+        "Only proteins"
+      ],
+      "correctIndex": 0,
+      "explanation": "DNA uses sequences of four nucleotide bases to encode biological information."
+    },
+    "deeper": "DNA information is read and regulated through complex cellular processes.",
+    "sources": [
+      "https://www.genome.gov/genetics-glossary/Deoxyribonucleic-Acid"
+    ],
+    "paths": [
+      "bioinformatics",
+      "health-pm"
+    ]
+  },
+  {
+    "id": "bio-002",
+    "topic": "healthai",
+    "subtopic": "Sequencing",
+    "difficulty": "beginner",
+    "title": "Reading genomes",
+    "hook": "What does DNA sequencing determine?",
+    "explanation": "Sequencing identifies the order of nucleotide bases in a DNA molecule.",
+    "quiz": {
+      "question": "Sequencing primarily reveals…",
+      "choices": [
+        "A person’s personality",
+        "Base order",
+        "A guaranteed diagnosis"
+      ],
+      "correctIndex": 1,
+      "explanation": "Sequencing identifies the order of nucleotide bases in a DNA molecule."
+    },
+    "deeper": "Interpretation requires quality control and biological context.",
+    "sources": [
+      "https://www.genome.gov/about-genomics/fact-sheets/Sequencing-Human-Genome-cost"
+    ],
+    "paths": [
+      "bioinformatics"
+    ]
+  },
+  {
+    "id": "bio-003",
+    "topic": "healthai",
+    "subtopic": "Genomics",
+    "difficulty": "beginner",
+    "title": "Variants and risk",
+    "hook": "Does a genetic variant always cause disease?",
+    "explanation": "Variants can be benign, pathogenic, or uncertain; effects depend on context and evidence.",
+    "quiz": {
+      "question": "Which is accurate?",
+      "choices": [
+        "Many variants have uncertain effects",
+        "Variants are always inherited",
+        "All variants are harmful"
+      ],
+      "correctIndex": 0,
+      "explanation": "Variants can be benign, pathogenic, or uncertain; effects depend on context and evidence."
+    },
+    "deeper": "Clinical interpretation uses evidence frameworks and genetic counseling.",
+    "sources": [
+      "https://www.ncbi.nlm.nih.gov/clinvar/"
+    ],
+    "paths": [
+      "bioinformatics",
+      "health-pm"
+    ]
+  },
+  {
+    "id": "bio-004",
+    "topic": "healthai",
+    "subtopic": "Biology",
+    "difficulty": "intermediate",
+    "title": "RNA expression",
+    "hook": "Why do two cells with the same genome behave differently?",
+    "explanation": "Cells express different sets and amounts of genes, shaping their functions.",
+    "quiz": {
+      "question": "A major difference is…",
+      "choices": [
+        "Gene expression patterns",
+        "Their genetic alphabet",
+        "The existence of DNA"
+      ],
+      "correctIndex": 0,
+      "explanation": "Cells express different sets and amounts of genes, shaping their functions."
+    },
+    "deeper": "Single-cell RNA sequencing profiles expression across cells.",
+    "sources": [
+      "https://www.genome.gov/genetics-glossary/Gene-Expression"
+    ],
+    "paths": [
+      "bioinformatics"
+    ]
+  },
+  {
+    "id": "bio-005",
+    "topic": "healthai",
+    "subtopic": "Bioinformatics",
+    "difficulty": "intermediate",
+    "title": "Sequence alignment",
+    "hook": "How do researchers compare DNA sequences?",
+    "explanation": "Alignment methods arrange sequences to identify similarities, differences, and possible shared origins.",
+    "quiz": {
+      "question": "Alignment is used to…",
+      "choices": [
+        "Measure blood pressure",
+        "Guarantee ancestry",
+        "Compare biological sequences"
+      ],
+      "correctIndex": 2,
+      "explanation": "Alignment methods arrange sequences to identify similarities, differences, and possible shared origins."
+    },
+    "deeper": "Scoring schemes balance matches, mismatches, and gaps.",
+    "sources": [
+      "https://www.ncbi.nlm.nih.gov/books/NBK21107/"
+    ],
+    "paths": [
+      "bioinformatics"
+    ]
+  },
+  {
+    "id": "bio-006",
+    "topic": "healthai",
+    "subtopic": "Drug discovery",
+    "difficulty": "intermediate",
+    "title": "Targets and validation",
+    "hook": "A molecule binds a protein. Is it a medicine?",
+    "explanation": "Binding is only an early clue; efficacy, selectivity, toxicity, and clinical benefit must be tested.",
+    "quiz": {
+      "question": "What is still needed?",
+      "choices": [
+        "Safety and efficacy evidence",
+        "Only more binding images",
+        "A nicer logo"
+      ],
+      "correctIndex": 0,
+      "explanation": "Binding is only an early clue; efficacy, selectivity, toxicity, and clinical benefit must be tested."
+    },
+    "deeper": "Drug discovery has many stages and high attrition.",
+    "sources": [
+      "https://www.fda.gov/patients/drug-development-process/step-1-discovery-and-development"
+    ],
+    "paths": [
+      "bioinformatics"
+    ]
+  }
+]
