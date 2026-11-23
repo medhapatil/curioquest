@@ -40,3 +40,7 @@ No cross-device sync. Browser storage can be deleted by the OS/browser. Offline 
 
 ## Approved Ink & Paper design
 The interface is permanently dark (ink #101715), with muted sage controls and minimal surfaces. Lesson explanations and quiz cards alone use warm ivory (#F5F0E7) for comfortable reading. Headings use Newsreader, UI text uses Inter. No theme toggle is required. Fonts are fetched from Google Fonts when online, with system fallbacks offline.
+
+## App icon
+
+The approved minimalist droplet icon is included in `public/icons/` in SVG, 192px, 512px, and 180px iPhone formats. After redeploying, if your iPhone still shows the old icon, remove the existing Home Screen shortcut and add the app again in Safari.
